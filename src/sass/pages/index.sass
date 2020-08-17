@@ -1,0 +1,189 @@
+.index
+  .creative-space
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    background: url("../img/creative-space_bg.png") 115px center no-repeat
+    padding: 261px 0 77px
+    margin-bottom: 20px
+    h2
+      font-weight: 700
+      color: #fff
+      font-size: 48px
+      letter-spacing: 20px
+      margin: 0 0 47px
+    p
+      font-size: 16px
+      color: #fff
+      margin: 0 0 100px
+      padding-left: 31px
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        bottom: 0
+        margin: auto
+        width: 20px
+        height: 20px
+        background-color: #036ade
+    a
+      color: #fff
+      font-size: 16px
+      font-weight: 800
+  .social
+    display: flex
+    align-items: center
+    margin-bottom: 160px
+    a
+      width: 27px
+      height: 27px
+      margin-right: 13px
+      &.youtube
+        width: 34px
+        height: 23px
+        margin-right: 0
+  .about-us, .why-us .container
+    display: flex
+    align-items: flex-start
+    margin-bottom: 200px
+    position: relative
+    z-index: 1
+    .image
+      margin-top: 25px
+      width: 50%
+      padding-right: 50px
+      box-sizing: border-box
+      img
+        box-shadow: 13px 13px 19.44px 7.56px rgba(126, 160, 255, 0.11)
+    .text
+      width: 50%
+      display: flex
+      flex-direction: column
+      h2
+        align-self: flex-end
+        font-size: 48px
+        color: #f1f1f1
+        letter-spacing: 10px
+        margin: 0 0 45px
+        font-weight: 600
+        position: relative
+        padding-right: 36px
+        &:after
+          content: ''
+          position: absolute
+          right: 0
+          bottom: 0
+          width: 20px
+          height: 20px
+          background-color: #000000
+      .desc
+        display: flex
+        flex-direction: column
+      b
+        font-weight: bold
+        font-family: Futura
+        font-size: 24px
+        margin-bottom: 24px
+        display: inline-block
+      p
+        font-size: 16px
+        font-weight: 300
+        margin: 0 0 24px
+        &:last-child
+          margin-bottom: 50px
+      a
+        font-weight: 500
+        font-size: 14px
+        color: #4c4c4c
+        margin: 0 auto
+        text-transform: uppercase
+  .why-us
+    padding: 140px 0 77px
+    position: relative
+    background: #ececec
+    &:after
+      content: ''
+      width: 33%
+      height: 100%
+      position: absolute
+      left: 0
+      top: 0
+      background: #fff
+    .container
+      margin-bottom: 0
+      .image img
+        box-shadow: 0 13px 19.44px 7.56px rgba(126, 160, 255, 0.11)
+  .courses.container
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-bottom: 65px
+    .grid
+      padding: 0 50px
+      display: grid
+      grid-template-columns: repeat(3, 1fr)
+      grid-auto-rows: 1fr
+      grid-column-gap: 70px
+      grid-row-gap: 25px
+      position: relative
+      margin-bottom: 75px
+      &:after
+        content: 'COURSES'
+        position: absolute
+        text-transform: uppercase
+        transform: rotate(90deg) translate(calc(50% + -75px), -25%)
+        z-index: -2
+        top: 0
+        right: -50%
+        font-size: 257px
+        color: #f4f8fa
+        font-weight: 800
+      .elem
+        position: relative
+        text-decoration: none
+        img:nth-child(2)
+          position: absolute
+          top: 10%
+          right: -15%
+          z-index: -1
+          filter: blur(50px)
+          user-select: none
+          pointer-events: none
+        p
+          font-size: 18px
+          font-weight: 600
+          color: #000
+        &:nth-child(4)
+          img:nth-child(2)
+            transform: rotate(180deg)
+        &:nth-child(3n)
+          margin-top: 25px
+        &:nth-child(3n-1)
+          margin-top: 50px
+    &>a
+      text-align: center
+      font-weight: 500
+      font-size: 14px
+      color: #828282
+      text-transform: uppercase
+  .parallax
+    height: 300px
+    background: url("../img/parallax_BG.png") center center / 100% auto no-repeat fixed
+    display: flex
+    align-items: center
+    justify-content: center
+    a
+      padding: 15px 25px
+      background: rgba(255,255,255, .8)
+      color: #000
+      font-size: 14px
+      line-height: 14px
+      font-weight: 500
+      text-decoration: none
+
+
+
+

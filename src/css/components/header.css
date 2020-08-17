@@ -1,0 +1,21 @@
+header {
+  padding: 30px 0; }
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    header .container .logo {
+      font-size: 18px;
+      font-weight: 600; }
+      header .container .logo p {
+        margin: 0; }
+    header .container .menu {
+      display: flex;
+      align-items: center; }
+      header .container .menu img {
+        width: 18px;
+        height: 16px;
+        margin-right: 13px; }
+      header .container .menu p {
+        font-size: 18px;
+        margin: 0; }
