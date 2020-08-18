@@ -1,0 +1,75 @@
+.subscribe
+  background: #151515
+  padding: 112px 0 150px
+  .container
+    display: flex
+    flex-direction: column
+    align-items: center
+    h2
+      color: #fff
+      font-weight: 600
+      text-transform: lowercase
+      letter-spacing: 10px
+      font-size: 48px
+      line-height: 48px
+      position: relative
+      margin: 0 0 17px
+      &:before
+        content: ''
+        width: 75px
+        height: 75px
+        position: absolute
+        left: -80px
+        top: -11px
+        background: url("../img/svg/painter-palette.svg") center center / 100% 100% no-repeat
+    p
+      color: #c7bfbf
+      font-size: 14px
+      line-height: 24px
+      font-weight: 200
+      margin: 0 0 80px
+    form
+      display: flex
+      input
+        width: 390px
+        font-size: 14px
+        line-height: 30px
+        padding: 5px 15px
+        border: 1px solid #fff
+        outline: none
+
+@media (max-width: 767px)
+  .subscribe .container
+    h2:before
+      left: -37px
+      top: -66px
+      transform: rotate(25deg)
+    p
+      margin-bottom: 50px
+    form
+      width: 100%
+      input
+        width: 66%
+      .btn
+        font-size: 14px
+        width: 33%
+
+@media (max-width: 575px)
+  .subscribe .container h2
+    width: 80%
+    font-size: 30px
+    &:before
+      width: 60px
+      height: 60px
+      top: -50px
+
+@media (max-width: 480px)
+  .subscribe .container form
+    flex-direction: column
+    align-items: center
+    input
+      margin-bottom: 10px
+      width: 100%
+      box-sizing: border-box
+    .btn
+      width: 280px
