@@ -5,10 +5,10 @@ header
     justify-content: space-between
     align-items: center
     .logo
-      font-size: 18px
-      font-weight: 600
       p
         margin: 0
+        font-size: 18px
+        font-weight: 600
     .menu
       display: flex
       align-items: center
@@ -19,3 +19,17 @@ header
       p
         font-size: 18px
         margin: 0
+@media (max-width: 480px)
+  header
+    padding: 15px 0
+    .container
+      .logo
+        p
+          @media (max-width: 480px)
+            font-size: 14px
+      .menu
+        img
+          width: 16px
+          height: 14px
+        p
+          font-size: 14px
