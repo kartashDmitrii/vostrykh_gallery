@@ -2,7 +2,7 @@
   overflow-x: hidden; }
   .about-us .top-block {
     margin-top: 45px;
-    margin-bottom: 90px;
+    margin-bottom: 176px;
     display: flex;
     flex-direction: column; }
     .about-us .top-block:before {
@@ -183,8 +183,10 @@
     background: url("../img/abot-us_parallax_BG.jpg") center center/cover no-repeat fixed; }
 
 @media (max-width: 1365px) {
-  .about-us .top-block:before {
-    left: 18%; }
+  .about-us .top-block {
+    margin-bottom: 140px; }
+    .about-us .top-block:before {
+      left: 18%; }
   .about-us .our-team .container:after {
     right: 82%; }
   .about-us .social {
@@ -201,7 +203,7 @@
 
 @media (max-width: 1199px) {
   .about-us .top-block {
-    margin-bottom: 72px; }
+    margin-bottom: 122px; }
     .about-us .top-block .name {
       font-size: 40px; }
   .about-us .our-team .container .team .employee {
@@ -209,7 +211,7 @@
 
 @media (max-width: 1024px) {
   .about-us .top-block {
-    margin-bottom: 36px; }
+    margin-bottom: 86px; }
     .about-us .top-block .name {
       color: #1c1c1c; } }
 
@@ -224,7 +226,7 @@
 
 @media (max-width: 767px) {
   .about-us .top-block {
-    margin-bottom: 26px; }
+    margin-bottom: 76px; }
     .about-us .top-block:before {
       left: 25%; }
     .about-us .top-block .content .image img {

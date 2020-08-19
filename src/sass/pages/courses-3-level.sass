@@ -1,0 +1,523 @@
+.courses-3-level
+  .banner
+    margin: 0 auto 200px
+    width: 1000px
+    height: 560px
+    background: url("../img/courses-3-level_banner_BG.png") center center / cover no-repeat
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    .buttons
+      margin-bottom: 70px
+      .btn
+        background: #d0ab8a
+        width: 180px
+        margin-right: 57px
+        font-weight: 500
+        &:last-child
+          margin-right: 0
+    p
+      margin: 0
+      font-size: 16px
+      color: #fff
+      padding-left: 32px
+      position: relative
+      &:before
+        content: ''
+        width: 20px
+        height: 20px
+        position: absolute
+        left: 0
+        bottom: 0
+        background: #ff6c38
+  .about-course
+    display: flex
+    flex-direction: column
+    margin-bottom: 260px
+    h2
+      margin: 0 100px 73px 0
+      font-weight: 600
+      font-size: 48px
+      color: #f1f1f1
+      position: relative
+      padding-right: 35px
+      align-self: flex-end
+      &:after
+        content: ''
+        width: 20px
+        height: 20px
+        position: absolute
+        right: 0
+        bottom: 0
+        color: #d0ab8a
+    .text
+      width: 60%
+      padding-left: 12%
+      box-sizing: border-box
+      *
+        margin: 0 0 15px
+        font-weight: 300
+        font-size: 16px
+        text-align: justify
+  .program
+    background: #ececec
+    position: relative
+    padding-top: 150px
+    padding-bottom: 70px
+    z-index: 1
+    &:before
+      content: ''
+      height: 100%
+      width: 27%
+      position: absolute
+      left: 0
+      top: 0
+      background: #fff
+      z-index: 0
+    .container
+      display: flex
+      align-items: center
+      .image
+        min-width: 50%
+        box-sizing: border-box
+        position: relative
+        z-index: 1
+        img
+          box-sizing: border-box
+          padding-left: 30px
+          padding-right: 50px
+        img:not(:first-child)
+          position: absolute
+          top: 5%
+          right: -2%
+          z-index: -1
+          filter: blur(15px)
+          user-select: none
+          pointer-events: none
+      .text
+        display: flex
+        flex-direction: column
+        position: relative
+        z-index: 1
+        .title
+          font-weight: 500
+          font-size: 16px
+          text-transform: uppercase
+          margin: 0 0 15px
+        .desc
+          margin-bottom: 100px
+          *
+            font-weight: 300
+            font-size: 16px
+            margin: 0 0 15px
+            text-align: justify
+        >a
+          font-weight: 500
+          text-transform: uppercase
+          text-decoration: none
+          color: #4c4c4c
+          text-align: center
+          align-self: center
+  .parallax
+    display: flex
+    align-items: center
+    justify-content: center
+    &.first
+      height: 400px
+      background: url("../img/courses-3-level_parallax_BG.jpg") center center / cover no-repeat fixed
+      margin-bottom: 72px
+    &.second
+      height: 300px
+      background: url("../img/parallax_BG.png") center center / cover no-repeat fixed
+    a
+      padding: 15px 25px
+      background: rgba(148, 160, 128, .82)
+      color: #000
+      font-size: 14px
+      line-height: 14px
+      font-weight: 500
+      text-decoration: none
+  .modules
+    display: flex
+    flex-direction: column
+    margin-bottom: 180px
+    .module
+      display: flex
+      margin-bottom: 15px
+      position: relative
+      box-sizing: border-box
+      box-shadow: 7px 7px 12px 0 rgba(216,229,240,0.75)
+      &:last-child
+        margin-bottom: 0
+      .index
+        width: 335px
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        padding: 45px
+        background: #e3ecf4
+        p
+          font-weight: 600
+          font-size: 18px
+          text-transform: uppercase
+          margin: 0
+      .text
+        padding: 0 35px
+        display: flex
+        align-items: center
+        position: relative
+        width: 100%
+        cursor: pointer
+        box-sizing: border-box
+        .name
+          width: 100%
+          position: relative
+          &:after
+            content: ''
+            position: absolute
+            width: 15px
+            height: 15px
+            border: solid #000
+            border-width: 2px 2px 0 0
+            transform: rotate(45deg)
+            right: -15px
+            top: 0
+            bottom: 0
+            margin: auto
+        .desc
+          display: none
+        .remark
+          display: none
+      &.selected
+        width: 100%
+        flex-direction: column
+        align-items: flex-end
+        padding: 90px 50px 210px
+        .index
+          position: absolute
+          left: -90px
+          top: -128px
+          height: 100%
+          width: 20%
+          justify-content: center
+          background: #353fff
+          p
+            color: #fff
+            font-size: 48px
+            position: relative
+            min-width: 600px
+            transform: rotate(-90deg)
+            padding-left: 30px
+            margin-bottom: 125px
+            &:before
+              content: ''
+              width: 20px
+              height: 20px
+              position: absolute
+              bottom: -20px
+              left: 0
+              background: #e3ecf4
+        .text
+          flex-direction: column
+          align-items: flex-end
+          width: 60%
+          .name
+            font-weight: 500
+            font-size: 16px
+            margin-bottom: 30px
+            &:after
+              content: none
+          .desc
+            display: block
+            margin-bottom: 30px
+            width: 100%
+            *
+              margin: 0 0 20px
+              font-size: 16px
+              font-weight: 300
+              text-align: justify
+              &:last-child
+                margin-bottom: 0
+          .remark
+            width: 100%
+            display: block
+            margin: 0
+            font-weight: 300
+            font-size: 16px
+            padding-left: 30px
+            position: relative
+            box-sizing: border-box
+            &:before
+              content: ''
+              position: absolute
+              width: 20px
+              height: 20px
+              left: 0
+              top: -2px
+              background: #e3ecf4
+  .students-work
+    margin-bottom: 250px
+    .wrapper
+      h2
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        margin: auto
+        text-align: center
+        z-index: 2
+        font-size: 48px
+        line-height: 48px
+        height: 48px
+        font-weight: 600
+        color: #fff
+        letter-spacing: 10px
+        user-select: none
+        pointer-events: none
+      .images
+        width: 100%
+        display: grid
+        box-sizing: border-box
+        margin: 0 0 50px
+        grid-template-columns: 27% 45% 27%
+        grid-column-gap: .5%
+        grid-auto-rows: 1fr
+        .image
+          display: flex
+          img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    a
+      display: block
+      margin: 0 auto
+      text-align: center
+      text-transform: uppercase
+      font-size: 14px
+      font-weight: 500
+      color: #8b8a8a
+  .price
+    display: flex
+    margin-bottom: 187px
+    .block
+      width: 24.9%
+      margin-right: .1%
+      .name
+        height: 140px
+        background: #d8e5f0
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-bottom: 20px
+        p
+          width: 50%
+          margin: 0
+          font-weight: 600
+          font-size: 18px
+          text-align: center
+        img
+          width: 59px
+      .desc
+        background: #f9fcff
+        padding: 40px
+        ul
+          padding: 0
+          margin: 0
+          list-style: none
+          li
+            padding: 25px 0
+            font-size: 16px
+            height: 16px
+            line-height: 16px
+            color: #535353
+            text-align: center
+            p
+              margin: 0
+            span
+              display: none
+            &:first-child
+              height: 33px
+            img
+              width: 45px
+              height: 33px
+        .btn
+          width: 100%
+          height: 40px
+          border: 1px solid #8e8e8e
+          box-sizing: border-box
+          background: transparent
+          color: #000
+          padding: 0
+          display: flex
+          align-items: center
+          justify-content: center
+      &:last-child
+        margin-right: 0
+      &:first-child
+        .desc
+          padding-bottom: 80px
+          li
+            font-weight: 500
+
+@media (max-width: 1199px)
+  .courses-3-level
+    .modules .module.selected
+      padding-bottom: 140px
+
+@media (max-width: 1024px)
+  .courses-3-level
+    .banner
+      width: 100%
+      margin-bottom: 100px
+    .about-course
+      margin-bottom: 160px
+      h2
+        margin-right: 0
+      .text
+        width: 80%
+    .program
+      padding-top: 40px
+      .container
+        flex-direction: column
+        .image
+          min-width: auto
+          width: 70%
+          margin-bottom: 20px
+        .text .desc
+          margin-bottom: 50px
+    .modules
+      margin-bottom: 80px
+      .module.selected
+        padding: 40px 20px 80px
+        .text
+          width: 80%
+        .index p
+          margin-bottom: 230px
+    .students-work
+      margin-bottom: 100px
+      .wrapper h2
+        font-size: 32px
+    .price
+      margin-bottom: 57px
+      .block
+        width: 24.5%
+        margin-right: .5%
+        .name p
+          width: 90%
+          font-size: 16px
+        .desc
+          padding: 40px 10px
+
+@media (max-width: 767px)
+  .courses-3-level
+    .banner
+      .buttons
+        display: flex
+        flex-direction: column
+        align-items: center
+        .btn
+          margin-bottom: 15px
+          margin-right: 0
+          &:last-child
+            margin-bottom: 0
+    .program
+      .container
+        .image
+          width: 90%
+          margin-bottom: 45px
+    .modules
+      .module
+        .index
+          width: 35%
+          padding: 25px
+          p
+            font-size: 14px
+        &.selected
+          .index
+            left: -40px
+            width: 15%
+            p
+              font-size: 36px
+          .text
+            width: 85%
+    .price
+      flex-direction: column
+      .block
+        width: 100%
+        margin-right: 0
+        margin-bottom: 20px
+        &:first-child
+          display: none
+        .name
+          margin-bottom: 0
+        .desc ul li
+          display: flex
+          span
+            display: inline-block
+            width: 50%
+            text-align: center
+          p
+            width: 50%
+          img
+            width: 50%
+
+@media (max-width: 575px)
+  .courses-3-level
+    .banner
+      margin-bottom: 40px
+    .about-course
+      margin-bottom: 40px
+      h2
+        padding-right: 0
+        text-align: center
+        font-size: 36px
+        margin-bottom: 25px
+        width: 100%
+      .text
+        padding-left: 0
+        width: 100%
+    .program .container
+      .image
+        width: 100%
+        img
+          padding: 0
+
+@media (max-width: 480px)
+  .courses-3-level
+    .modules
+      .module.selected
+        .index
+          height: 360px
+
+@media (max-width: 420px)
+  .courses-3-level
+    .modules
+      .module
+        flex-direction: column
+        .index
+          width: 100%
+          margin-bottom: 10px
+          box-sizing: border-box
+          padding: 10px
+        .text
+          padding: 10px 25px 10px 10px
+      .module.selected
+        padding: 0 0 40px
+        .index
+          position: static
+          width: 100%
+          height: auto
+          margin-bottom: 10px
+          p
+            transform: none
+            margin: 0
+            padding: 0
+            min-width: auto
+            &:before
+              left: -20px
+        .text
+          width: 100%
+          padding: 10px 10px 0
+          box-sizing: border-box

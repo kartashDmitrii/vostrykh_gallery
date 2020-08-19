@@ -90,59 +90,6 @@
         color: #4c4c4c;
         margin: 0 auto;
         text-transform: uppercase; }
-  .index .courses.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 65px; }
-    .index .courses.container .grid {
-      padding: 0 50px;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-auto-rows: 1fr;
-      grid-column-gap: 70px;
-      grid-row-gap: 25px;
-      position: relative;
-      margin-bottom: 75px; }
-      .index .courses.container .grid:after {
-        content: 'COURSES';
-        position: absolute;
-        text-transform: uppercase;
-        transform: rotate(90deg) translate(calc(50% + -75px), -25%);
-        z-index: -2;
-        top: 0;
-        right: -50%;
-        font-size: 257px;
-        color: #f4f8fa;
-        font-weight: 800; }
-      .index .courses.container .grid .elem {
-        position: relative;
-        text-decoration: none; }
-        .index .courses.container .grid .elem img:nth-child(2) {
-          position: absolute;
-          top: 10%;
-          right: -15%;
-          z-index: -1;
-          filter: blur(50px);
-          user-select: none;
-          pointer-events: none; }
-        .index .courses.container .grid .elem p {
-          font-size: 18px;
-          font-weight: 600;
-          color: #000; }
-        .index .courses.container .grid .elem:nth-child(4) img:nth-child(2) {
-          transform: rotate(180deg); }
-        @media (min-width: 576px) {
-          .index .courses.container .grid .elem:nth-child(3n) {
-            margin-top: 25px; }
-          .index .courses.container .grid .elem:nth-child(3n-1) {
-            margin-top: 50px; } }
-    .index .courses.container > a {
-      text-align: center;
-      font-weight: 500;
-      font-size: 14px;
-      color: #828282;
-      text-transform: uppercase; }
   .index .parallax {
     display: flex;
     align-items: center;
@@ -224,14 +171,7 @@
 @media (max-width: 1365px) {
   .index .creative-space {
     background-position: left center;
-    background-size: auto 100%; }
-  .index .courses.container .grid:after {
-    font-size: 222px; } }
-
-@media (max-width: 1199px) {
-  .index .courses.container .grid:after {
-    font-size: 211px;
-    right: -46%; } }
+    background-size: auto 100%; } }
 
 @media (max-width: 1023px) {
   .index .creative-space {
@@ -250,11 +190,6 @@
       margin: 0 auto 25px; }
     .index .about-us .text, .index .why-us .container .text {
       width: 100%; }
-  .index .courses.container .grid {
-    grid-template-columns: 1fr 1fr; }
-    .index .courses.container .grid:after {
-      font-size: 275px;
-      right: -90%; }
   .index .why-us {
     padding: 70px 0 40px;
     margin-bottom: 20px; }
@@ -266,24 +201,10 @@
     height: 330px; } }
 
 @media (max-width: 767px) {
-  .index .courses.container .grid:after {
-    font-size: 234px;
-    right: auto;
-    left: -119%; }
   .index .about-us .image, .index .why-us .container .image {
     width: 80%; } }
 
 @media (max-width: 575px) {
-  .index .courses.container .grid {
-    grid-template-columns: 1fr; }
-    .index .courses.container .grid .elem {
-      margin-top: 0; }
-    .index .courses.container .grid:after {
-      transform: none;
-      font-size: 50px;
-      top: -75px;
-      left: 0;
-      right: auto; }
   .index .form h2 {
     margin-bottom: 30px; }
   .index .why-us {
@@ -308,6 +229,6 @@
   .index .form form .field {
     flex-direction: column; }
     .index .form form .field label:first-child {
-      min-width: none;
+      min-width: auto;
       width: 100%;
       margin-right: 0; } }
