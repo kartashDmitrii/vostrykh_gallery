@@ -223,108 +223,102 @@
           width: 270px
           margin-right: 30px
 @media (max-width: 1365px)
-  .index .creative-space
-    background-position: left center
-    background-size: auto 100%
-
-  .index .courses.container .grid:after
-    font-size: 222px
+  .index
+    .creative-space
+      background-position: left center
+      background-size: auto 100%
+    .courses.container .grid:after
+      font-size: 222px
 
 @media (max-width: 1199px)
-  .index .courses.container .grid:after
-    font-size: 211px
-    right: -46%
+  .index
+    .courses.container .grid:after
+      font-size: 211px
+      right: -46%
 
 @media (max-width: 1023px)
-  .index .creative-space
-    max-width: none
-    background-size: auto 125%
-    padding-top: 133px
-    h2
-      font-size: 42px
-      letter-spacing: 10px
-
-  .index .about-us, .index .why-us .container
-    flex-direction: column
-    margin-bottom: 100px
-    .image
-      width: 60%
-      padding-right: 0
-      margin: 0 auto 25px
-    .text
-      width: 100%
-
-  .index .courses.container .grid
+  .index
+    .creative-space
+      max-width: none
+      background-size: auto 125%
+      padding-top: 133px
+      h2
+        font-size: 42px
+        letter-spacing: 10px
+    .about-us, .why-us .container
+      flex-direction: column
+      margin-bottom: 100px
+      .image
+        width: 60%
+        padding-right: 0
+        margin: 0 auto 25px
+      .text
+        width: 100%
+    .courses.container .grid
       grid-template-columns: 1fr 1fr
       &:after
         font-size: 275px
         right: -90%
-
-  .index .why-us
-    padding: 70px 0 40px
-    margin-bottom: 20px
-    .container
-      margin-bottom: 40px
-
-  .index .form
-    margin-bottom: 80px
-
-  .index .parallax.second
-    height: 330px
+    .why-us
+      padding: 70px 0 40px
+      margin-bottom: 20px
+      .container
+        margin-bottom: 40px
+    .form
+      margin-bottom: 80px
+    .parallax.second
+      height: 330px
 
 @media (max-width: 767px)
-  .index .courses.container .grid:after
-    font-size: 234px
-    right: auto
-    left: -119%
-
-  .index .about-us, .index .why-us .container
-    .image
-      width: 80%
+  .index
+    .courses.container .grid:after
+      font-size: 234px
+      right: auto
+      left: -119%
+    .about-us, .why-us .container
+      .image
+        width: 80%
 
 @media (max-width: 575px)
-
-  .index .courses.container .grid
-    grid-template-columns: 1fr
-    .elem
-      margin-top: 0
-    &:after
-      transform: none
-      font-size: 50px
-      top: -75px
-      left: 0
-      right: auto
-
-  .index .form h2
-    margin-bottom: 30px
-
-  .index .why-us
-    padding-bottom: 20px
-    margin-bottom: 60px
+  .index
+    .courses.container .grid
+      grid-template-columns: 1fr
+      .elem
+        margin-top: 0
+      &:after
+        transform: none
+        font-size: 50px
+        top: -75px
+        left: 0
+        right: auto
+    .form h2
+      margin-bottom: 30px
+    .why-us
+      padding-bottom: 20px
+      margin-bottom: 60px
 
 @media (max-width: 480px)
-  .index .creative-space p
-    text-align: center
-    padding-left: 0
-    &:before
-      left: 0
-      right: 0
-      bottom: auto
-      margin: auto
-      top: -25px
-
-  .index .about-us, .index .why-us .container
-    .image
-      width: 100%
-    .text
-      h2
-        font-size: 32px
-        margin-bottom: 25px
-
-  .index .form form .field
-    flex-direction: column
-    label
-      &:first-child
-        min-width: none
+  .index
+    .creative-space p
+      text-align: center
+      padding-left: 0
+      &:before
+        left: 0
+        right: 0
+        bottom: auto
+        margin: auto
+        top: -25px
+    .about-us, .why-us .container
+      .image
         width: 100%
-        margin-right: 0
+      .text
+        h2
+          font-size: 32px
+          margin-bottom: 25px
+    .form form .field
+      flex-direction: column
+      label
+        &:first-child
+          min-width: none
+          width: 100%
+          margin-right: 0

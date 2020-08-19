@@ -1,0 +1,173 @@
+.about-us-artwork .top-block {
+  position: relative;
+  margin-bottom: 220px; }
+  .about-us-artwork .top-block .container {
+    position: static;
+    display: flex;
+    justify-content: flex-end; }
+    .about-us-artwork .top-block .container .image {
+      flex: 1;
+      margin-right: 25px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      max-width: 650px;
+      right: 50%;
+      padding-bottom: 1px; }
+    .about-us-artwork .top-block .container .text {
+      width: 50%;
+      padding-top: 35px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .about-us-artwork .top-block .container .text h2 {
+        font-size: 48px;
+        line-height: 48px;
+        font-weight: 700;
+        margin: 0 0 70px;
+        position: relative;
+        padding-right: 35px;
+        letter-spacing: 10px; }
+        .about-us-artwork .top-block .container .text h2:after {
+          content: '';
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          background: #000; }
+      .about-us-artwork .top-block .container .text .desc * {
+        margin: 0 0 15px;
+        font-size: 16px;
+        font-weight: 300;
+        text-align: justify; }
+        .about-us-artwork .top-block .container .text .desc *:last-child {
+          margin: 0; }
+
+.about-us-artwork .social {
+  margin-bottom: 65px; }
+
+.about-us-artwork .gallery #grid::before {
+  content: '3 .column.size-1of3'; }
+
+.about-us-artwork .gallery #grid .column {
+  float: left; }
+
+.about-us-artwork .gallery #grid .size-1of3 {
+  width: 33.333%; }
+
+.about-us-artwork .gallery #grid .paint {
+  margin: 0 10px; }
+
+.about-us-artwork .gallery #grid > div:first-child .paint {
+  margin-right: 20px;
+  margin-left: 0; }
+
+.about-us-artwork .gallery #grid > div:last-child .paint {
+  margin-left: 20px;
+  margin-right: 0; }
+
+.about-us-artwork .gallery #grid > div:nth-child(2) {
+  padding-top: 95px; }
+
+.about-us-artwork .gallery #grid .paint {
+  margin-bottom: 20px; }
+  .about-us-artwork .gallery #grid .paint:last-child {
+    margin-bottom: 0; }
+
+.about-us-artwork .gallery #grid .paint {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 15px 15.36px 0.64px rgba(92, 110, 161, 0.22);
+  border-radius: 6px;
+  font-style: italic; }
+  .about-us-artwork .gallery #grid .paint .image {
+    margin-bottom: 55px; }
+  .about-us-artwork .gallery #grid .paint .name {
+    padding-left: 35px;
+    font-weight: 300;
+    font-size: 15px; }
+    .about-us-artwork .gallery #grid .paint .name b {
+      display: inline-block;
+      margin-right: 10px; }
+    .about-us-artwork .gallery #grid .paint .name span {
+      color: #828282; }
+  .about-us-artwork .gallery #grid .paint .type {
+    font-weight: 300;
+    padding-left: 35px;
+    font-size: 15px;
+    color: #828282;
+    margin: 0 0 15px; }
+
+.about-us-artwork .gallery .clear {
+  clear: both; }
+
+.about-us-artwork .subscribe {
+  margin-top: 160px;
+  clear: both; }
+
+@media (max-width: 1365px) {
+  .about-us-artwork .top-block {
+    margin-bottom: 15px; }
+    .about-us-artwork .top-block .container .image {
+      position: static;
+      min-width: 650px;
+      height: auto; } }
+
+@media (max-width: 1199px) {
+  .about-us-artwork .top-block {
+    margin-bottom: 110px; }
+    .about-us-artwork .top-block .container .image {
+      position: absolute;
+      min-width: auto;
+      width: 50%; } }
+
+@media (max-width: 1023px) {
+  .about-us-artwork .top-block {
+    margin-bottom: 15px; }
+    .about-us-artwork .top-block .container {
+      flex-direction: column; }
+      .about-us-artwork .top-block .container .image {
+        position: static;
+        width: 60%;
+        margin: 0 auto; }
+      .about-us-artwork .top-block .container .text {
+        width: 100%; } }
+
+@media (max-width: 767px) {
+  .about-us-artwork .top-block .container .image {
+    width: 80%; }
+  .about-us-artwork .gallery #grid::before {
+    content: '2 .column.size-1of2'; }
+  .about-us-artwork .gallery #grid .size-1of2 {
+    width: 50%; }
+  .about-us-artwork .gallery #grid > div:first-child .paint {
+    margin-right: 10px; }
+  .about-us-artwork .gallery #grid > div:last-child .paint {
+    margin-left: 10px; }
+  .about-us-artwork .gallery #grid .paint .image {
+    margin-bottom: 25px; }
+  .about-us-artwork .gallery #grid .paint .name {
+    padding-left: 10px; }
+  .about-us-artwork .gallery #grid .paint .type {
+    padding-left: 10px; } }
+
+@media (max-width: 575px) {
+  .about-us-artwork .gallery #grid .paint .name {
+    padding: 0 10px; }
+  .about-us-artwork .gallery #grid .paint .type {
+    padding: 0 10px; } }
+
+@media (max-width: 480px) {
+  .about-us-artwork .top-block .container .image {
+    width: 100%; }
+  .about-us-artwork .top-block .container .text {
+    padding-top: 15px; }
+    .about-us-artwork .top-block .container .text h2 {
+      margin-bottom: 35px; }
+  .about-us-artwork .gallery #grid:before {
+    content: '1 .column.size-1of1'; }
+  .about-us-artwork .gallery #grid .size-1of1 {
+    width: 100%; }
+  .about-us-artwork .gallery #grid .paint .name {
+    font-size: 18px; } }

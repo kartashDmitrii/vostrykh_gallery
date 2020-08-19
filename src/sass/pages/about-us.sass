@@ -185,108 +185,108 @@
     background: url("../img/abot-us_parallax_BG.jpg") center center / cover no-repeat fixed
 
 @media (max-width: 1365px)
-  .about-us .top-block:before
-    left: 18%
-
-  .about-us .our-team .container:after
-    right: 82%
-
-  .about-us .social
-    margin-bottom: 23px
-
-  .about-us .our-team .container
-    padding-top: 70px
-    .team .employee
-        width: 630px
-        .image
-          min-width: 270px
-        @media (min-width: 768px)
-          &:nth-child(even)
-            .image
-              margin-top: -25px
+  .about-us
+    .top-block:before
+      left: 18%
+    .our-team .container:after
+      right: 82%
+    .social
+      margin-bottom: 23px
+    .our-team .container
+      padding-top: 70px
+      .team .employee
+          width: 630px
+          .image
+            min-width: 270px
+          @media (min-width: 768px)
+            &:nth-child(even)
+              .image
+                margin-top: -25px
 
 @media (max-width: 1199px)
-  .about-us .top-block
-    margin-bottom: 72px
-    .name
-      font-size: 40px
-
-  .about-us .our-team .container .team .employee
-    width: 610px
+  .about-us
+    .top-block
+      margin-bottom: 72px
+      .name
+        font-size: 40px
+    .our-team .container .team .employee
+      width: 610px
 
 @media (max-width: 1024px)
-  .about-us .top-block
-    margin-bottom: 36px
-    .name
-      color: #1c1c1c
-
-  .about-us .our-team .container .team .employee
-    @media (min-width: 768px)
-      &:nth-child(even)
-        flex-direction: row-reverse
-        .image
-          margin-right: 0
-          margin-left: 50px
-      &:nth-child(odd):not(:first-child)
-        .image
-          margin-top: 0
+  .about-us
+    .top-block
+      margin-bottom: 36px
+      .name
+        color: #1c1c1c
+    .our-team .container .team .employee
+      @media (min-width: 768px)
+        &:nth-child(even)
+          flex-direction: row-reverse
+          .image
+            margin-right: 0
+            margin-left: 50px
+        &:nth-child(odd):not(:first-child)
+          .image
+            margin-top: 0
 
 @media (max-width: 767px)
-  .about-us .top-block
-    margin-bottom: 26px
-    &:before
-      left: 25%
-    .content
-      .image img
-        left: -9px
-      .text
-        .title
-          margin-bottom: 25px
-        .elem
-          margin-bottom: 15px
-          b
+  .about-us
+    .top-block
+      margin-bottom: 26px
+      &:before
+        left: 25%
+      .content
+        .image img
+          left: -9px
+        .text
+          .title
+            margin-bottom: 25px
+          .elem
             margin-bottom: 15px
-  .about-us .our-team
-    .container
-      &:after
-        right: 75%
+            b
+              margin-bottom: 15px
+    .our-team
+      .container
+        &:after
+          right: 75%
+        .team
+          .employee
+            width: 100%
+            margin: 0 0 15px
+            .image
+              margin-left: 15px
+              margin-top: 0
+            @media (min-width: 576px)
+              &:nth-child(even)
+                flex-direction: row-reverse
+                .image
+                  margin-right: 0
+
+@media (max-width: 575px)
+  .about-us
+    .top-block
+      &:before
+        left: 0
+        width: 100%
+      .content
+        .text
+          width: 65%
+    .our-team .container
+      padding-top: 35px
       .team
         .employee
-          width: 100%
-          margin: 0 0 15px
+          flex-direction: column
           .image
-            margin-left: 15px
-            margin-top: 0
-          @media (min-width: 576px)
-            &:nth-child(even)
-              flex-direction: row-reverse
-              .image
-                margin-right: 0
+            width: 60%
+            margin: 0 auto 15px
 
 @media (max-width: 575px)
-  .about-us .top-block
-    &:before
-      left: 0
-      width: 100%
-    .content
-      .text
-        width: 65%
-  .about-us .our-team .container
-    padding-top: 35px
-    .team
-      .employee
-        flex-direction: column
+  .about-us
+    .top-block
+      .content
         .image
-          width: 60%
-          margin: 0 auto 15px
-
-@media (max-width: 575px)
-  .about-us .top-block
-    .content
-      .image
-        display: none
-      .text
-        width: 100%
-
-  .about-us .parallax
-    height: 250px
+          display: none
+        .text
+          width: 100%
+    .parallax
+      height: 250px
