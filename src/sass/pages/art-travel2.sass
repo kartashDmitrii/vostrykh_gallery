@@ -1,0 +1,397 @@
+.art-travel2
+  margin-top: -80px
+  .banner
+    background: url("../img/art-travel2_banner_BG.jpg") center center / cover no-repeat
+    display: flex
+    justify-content: flex-start
+    position: relative
+    margin-bottom: 167px
+    .block
+      width: 485px
+      padding: 180px 20px 260px 90px
+      display: flex
+      flex-direction: column
+      align-items: center
+      background: #ff5111
+      position: relative
+      h2
+        font-weight: 600
+        font-size: 48px
+        color: #fff
+        letter-spacing: 10px
+        margin: 0 0 100px
+      .date, .price
+        width: 100%
+        color: #fff
+        p
+          font-weight: 700
+          font-size: 16px
+          line-height: 18px
+          margin: 0 0 10px
+        b
+          display: block
+          font-family: Futura
+          font-weight: 700
+          font-size: 24px
+      .date
+        margin-bottom: 45px
+      span
+        position: absolute
+        font-weight: 500
+        font-size: 16px
+        line-height: 18px
+        color: #ffffff
+        top: calc( 100% - 18px - 9px)
+        left: calc( 70% + 7px)
+        width: max-content
+        transform: rotate(-90deg) translate(50%, 50%)
+  .text-field
+    display: flex
+    justify-content: flex-end
+    margin-bottom: 180px
+    .wrapper
+      width: 50%
+      padding-right: 85px
+      h2
+        font-family: Futura
+        font-weight: 700
+        font-size: 24px
+        line-height: 28px
+        margin: 0 0 20px
+        text-transform: uppercase
+      p
+        text-align: justify
+        font-size: 16px
+        line-height: 18px
+        font-weight: 300
+        margin-bottom: 25px
+      b
+        text-transform: uppercase
+        font-size: 16px
+        line-height: 18px
+        font-family: Futura
+        font-weight: 700
+      h3
+        font-size: 24px
+        line-height: 30px
+        font-family: Futura
+        font-weight: 700
+        margin: 0 0 5px
+  .info
+    background: #151515
+    padding: 230px 0 10px
+    margin-bottom: 80px
+    .container
+      .block
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-column-gap: 30px
+        grid-auto-rows: 1fr
+        .news
+          min-height: 300px
+          padding: 30px 30px 30px 40px
+          display: flex
+          flex-direction: column
+          cursor: pointer
+          &:hover
+            background: rgba(255,255,255,.7)
+          .title
+            font-weight: 700
+            font-size: 24px
+            color: #799bff
+            margin: 0 0 20px
+          .text
+            *
+              text-align: justify
+              color: #d6d6d6
+              font-size: 16px
+              line-height: 18px
+              margin: 0 0 5px
+              &:last-child
+                margin-bottom: 0
+            ul
+              list-style: none
+              padding: 0
+              li
+                padding-left: 10px
+                position: relative
+                &:before
+                  content: ''
+                  position: absolute
+                  left: 0
+                  top: 8.5px
+                  width: 4px
+                  height: 1px
+                  background: #d6d6d6
+      .arrows
+        position: absolute
+        top: 0
+        bottom: 0
+        left: -35px
+        right: 0
+        max-width: 100vw
+        width: calc( 35px + 35px + 100%)
+        margin: auto
+        z-index: 2
+        user-select: none
+        pointer-events: none
+        display: flex
+        justify-content: space-between
+        align-items: center
+        @media (max-width: 780px) and (min-width: 767px)
+          left: 0
+          width: 100%
+        .arrow
+          width: 15px
+          height: 25px
+          padding: 10px
+          background: url("../img/svg/next-blue.svg") center center / 100% 100% no-repeat
+          cursor: pointer
+          pointer-events: auto
+          user-select: auto
+          @media (max-width: 780px) and (min-width: 767px)
+            padding: 5px
+          &.prev
+            transform: rotate(180deg)
+  .art-team
+    display: flex
+    flex-direction: column
+    align-items: center
+    overflow-x: hidden
+    margin-bottom: 20px
+    &>button
+      width: 170px
+      padding: 10px
+      border: 1px solid #8e8e8e
+      font-size: 14px
+      line-height: 16px
+      font-weight: 500
+      background: none
+      outline: none
+      margin-bottom: 100px
+    .images
+      display: flex
+      overflow-x: scroll
+      padding-bottom: 20px
+      max-width: 100%
+      .image
+        min-width: 450px
+        height: 300px
+        margin-right: 30px
+        flex: 1
+        &:last-child
+          margin-right: 0
+        img
+          width: 100%
+          height: 100%
+          object-fit: cover
+          object-position: center center
+    ::-webkit-scrollbar
+      height: 3px
+    ::-webkit-scrollbar-track
+      background: #f0f0f0
+    ::-webkit-scrollbar-thumb
+      background: #b1b1b1
+    ::-webkit-scrollbar-thumb:hover
+      background: #9a9a9a
+  .participation
+    display: flex
+    justify-content: flex-end
+    .wrapper
+      width: 50%
+      padding: 150px 80px 100px
+      background-color: #f4f8fa
+      div
+        h2
+          font-family: Futura
+          font-weight: 700
+          font-size: 24px
+          line-height: 28px
+          margin: 0 0 20px
+        ul
+          padding-left: 30px
+          margin: 0
+          list-style: none
+          margin-bottom: 20px
+          li
+            padding-left: 40px
+            font-size: 14px
+            line-height: 16px
+            margin-bottom: 8px
+            position: relative
+            &:last-child
+              margin-bottom: 0
+            &:before
+              content: ''
+              width: 2px
+              height: 2px
+              border-radius: 50%
+              background: #000
+              position: absolute
+              left: 0
+              top: 7px
+  .reservation
+    margin-top: -40px
+    padding: 215px 0 200px
+    background: url("../img/art-travel2_reservation_BG.png") center center / cover no-repeat
+    .container
+      display: flex
+      flex-direction: column
+      align-items: center
+    h2
+      font-weight: 600
+      font-size: 48px
+      margin: 0 0 61px
+      text-align: center
+      position: relative
+      padding-right: 40px
+      text-transform: uppercase
+      color: #ffffff
+      &:after
+        content: ''
+        position: absolute
+        right: 0
+        bottom: -10px
+        width: 20px
+        height: 20px
+        background: #fff
+    form
+      input, textarea
+        background: rgba(255,255,255, .7)
+        &:focus
+          background: #fff
+    .btn
+      width: 228px
+      background: #ff5111
+      color: #ffffff
+      text-transform: uppercase
+  .parallax
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 400px
+    background: url("../img/art-travel_parallax2_BG.jpg") center center / cover no-repeat fixed
+    button
+      width: 770px
+      padding: 50px 25px 50px 125px
+      background: rgba(255,255,255,.7)
+      font-weight: 600
+      font-size: 18px
+      text-transform: uppercase
+      margin: 0
+      position: relative
+      border: none
+      outline: none
+      text-align: left
+      cursor: pointer
+      &:after
+        content: ''
+        width: 15px
+        height: 15px
+        position: absolute
+        right: 25px
+        transform: rotate(45deg)
+        border: solid #000
+        border-width: 1px 1px 0 0
+
+@media (max-width: 1365px)
+  .art-travel2
+    .info .container .slider .news
+      padding: 30px 10px
+
+@media (max-width: 1024px)
+  .art-travel2
+    .text-field .wrapper
+      padding-right: 35px
+      width: 75%
+    .info .container .slider .block
+      grid-template-columns: 1fr 1fr
+    .participation .wrapper
+      width: 75%
+      padding: 75px 40px 50px
+
+@media (max-width: 767px)
+  .art-travel2
+    .banner
+      margin-bottom: 50px
+      .block
+        width: 60%
+        padding: 80px 20px 150px
+        span
+          left: calc(65% + 7px)
+    .text-field
+      margin-bottom: 60px
+    .parallax
+      button
+        width: 80%
+        padding-left: 20%
+    .info
+      padding-top: 70px
+    .reservation
+      padding: 100px 0
+
+@media (max-width: 576px)
+  .art-travel2
+    .banner
+      .block
+        width: 100%
+        box-sizing: border-box
+        span
+          left: auto
+          right: -25%
+    .parallax button
+      width: 95%
+      padding: 25px 20px
+      font-size: 14px
+    .info .container
+      .slider
+        .block
+          grid-template-columns: 1fr
+          justify-content: center
+        .news
+          padding: 30px 25px
+      .arrows
+        left: 0
+        width: 100%
+        .arrow
+          padding: 5px
+    .art-team
+      .images .image
+        min-width: 100%
+        height: 0
+        margin-right: 15px
+        padding-bottom: 67%
+        overflow: hidden
+        img
+          height: auto
+
+@media (max-width: 480px)
+  .art-travel2
+    .banner .block
+      h2
+        font-size: 36px
+      .price
+        margin-bottom: 20px
+      span
+        position: static
+        transform: none
+        width: 100%
+    .text-field .wrapper
+      width: 100%
+      padding: 0
+    .info .container
+      .slider
+        .news
+          padding: 15px
+          .text *
+            text-align: left
+    .reservation .container
+      h2
+        font-size: 36px
+        padding-right: 0
+        &:after
+          content: none
+    .participation .wrapper
+      width: 100%
+      box-sizing: border-box
+      padding: 20px 15px

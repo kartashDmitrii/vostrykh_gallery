@@ -1,0 +1,90 @@
+.top-block {
+  position: relative;
+  margin-bottom: 220px; }
+  .top-block .container {
+    position: static;
+    display: flex;
+    justify-content: flex-end; }
+    .top-block .container .image {
+      flex: 1;
+      margin-right: 25px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      max-width: 650px;
+      right: 50%;
+      padding-bottom: 1px; }
+    .top-block .container .text {
+      width: 50%;
+      padding-top: 35px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .top-block .container .text h2 {
+        font-size: 48px;
+        line-height: 48px;
+        font-weight: 700;
+        margin: 0 0 70px;
+        position: relative;
+        padding-right: 35px;
+        letter-spacing: 10px;
+        text-transform: uppercase; }
+        .top-block .container .text h2:after {
+          content: '';
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          background: #000; }
+      .top-block .container .text .desc * {
+        margin: 0 0 15px;
+        font-size: 16px;
+        font-weight: 300;
+        text-align: justify; }
+        .top-block .container .text .desc *:last-child {
+          margin: 0; }
+
+@media (max-width: 1365px) {
+  .top-block {
+    margin-bottom: 15px; }
+    .top-block .container .image {
+      position: static;
+      min-width: 650px;
+      height: auto; } }
+
+@media (max-width: 1199px) {
+  .top-block {
+    margin-bottom: 110px; }
+    .top-block .container .image {
+      position: absolute;
+      min-width: auto;
+      width: 50%; } }
+
+@media (max-width: 1023px) {
+  .top-block {
+    margin-bottom: 15px; }
+    .top-block .container {
+      flex-direction: column; }
+      .top-block .container .image {
+        position: static;
+        width: 60%;
+        margin: 0 auto; }
+      .top-block .container .text {
+        width: 100%; } }
+
+@media (max-width: 767px) {
+  .top-block .container .image {
+    width: 80%; } }
+
+@media (max-width: 480px) {
+  .top-block .container .image {
+    width: 100%; }
+  .top-block .container .text {
+    padding-top: 15px; }
+    .top-block .container .text h2 {
+      margin-bottom: 35px;
+      font-size: 36px;
+      padding-right: 0; }
+      .top-block .container .text h2:after {
+        content: none; } }

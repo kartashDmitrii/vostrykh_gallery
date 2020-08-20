@@ -1,11 +1,11 @@
 .about-us {
   overflow-x: hidden; }
-  .about-us .top-block {
+  .about-us .top-info-block {
     margin-top: 45px;
     margin-bottom: 176px;
     display: flex;
     flex-direction: column; }
-    .about-us .top-block:before {
+    .about-us .top-info-block:before {
       content: '';
       height: 720px;
       width: 470px;
@@ -14,7 +14,7 @@
       top: -125px;
       background: url("../img/about-us_top-block_BG.jpg") center center/100% 100% no-repeat;
       z-index: -1; }
-    .about-us .top-block .name {
+    .about-us .top-info-block .name {
       color: #cacacc;
       font-weight: 600;
       font-size: 46px;
@@ -22,20 +22,20 @@
       letter-spacing: 10px;
       align-self: flex-end;
       margin: 0 0 45px; }
-    .about-us .top-block .content {
+    .about-us .top-info-block .content {
       display: flex; }
-      .about-us .top-block .content .text {
+      .about-us .top-info-block .content .text {
         width: 50%;
         display: flex;
         flex-direction: column; }
-        .about-us .top-block .content .text .title {
+        .about-us .top-info-block .content .text .title {
           font-size: 18px;
           line-height: 18px;
           font-weight: 500;
           padding-left: 30px;
           position: relative;
           margin: 0 0 60px; }
-          .about-us .top-block .content .text .title:before {
+          .about-us .top-info-block .content .text .title:before {
             content: '';
             position: absolute;
             left: 0;
@@ -45,24 +45,24 @@
             width: 20px;
             height: 20px;
             background: #ff6000; }
-        .about-us .top-block .content .text .elem {
+        .about-us .top-info-block .content .text .elem {
           margin-bottom: 30px; }
-          .about-us .top-block .content .text .elem b {
+          .about-us .top-info-block .content .text .elem b {
             display: inline-block;
             margin: 0 0 30px;
             font-weight: 500;
             font-size: 16px;
             line-height: 16px; }
-          .about-us .top-block .content .text .elem p {
+          .about-us .top-info-block .content .text .elem p {
             font-weight: 400;
             font-size: 16px;
             margin: 0;
             text-align: justify; }
-          .about-us .top-block .content .text .elem:last-child {
+          .about-us .top-info-block .content .text .elem:last-child {
             margin-bottom: 0; }
-      .about-us .top-block .content .image {
+      .about-us .top-info-block .content .image {
         position: relative; }
-        .about-us .top-block .content .image img {
+        .about-us .top-info-block .content .image img {
           position: absolute;
           left: -50px;
           top: 0;
@@ -183,9 +183,9 @@
     background: url("../img/abot-us_parallax_BG.jpg") center center/cover no-repeat fixed; }
 
 @media (max-width: 1365px) {
-  .about-us .top-block {
+  .about-us .top-info-block {
     margin-bottom: 140px; }
-    .about-us .top-block:before {
+    .about-us .top-info-block:before {
       left: 18%; }
   .about-us .our-team .container:after {
     right: 82%; }
@@ -202,17 +202,17 @@
         margin-top: -25px; } }
 
 @media (max-width: 1199px) {
-  .about-us .top-block {
+  .about-us .top-info-block {
     margin-bottom: 122px; }
-    .about-us .top-block .name {
+    .about-us .top-info-block .name {
       font-size: 40px; }
   .about-us .our-team .container .team .employee {
     width: 610px; } }
 
 @media (max-width: 1024px) {
-  .about-us .top-block {
+  .about-us .top-info-block {
     margin-bottom: 86px; }
-    .about-us .top-block .name {
+    .about-us .top-info-block .name {
       color: #1c1c1c; } }
 
 @media (max-width: 1024px) and (min-width: 768px) {
@@ -225,17 +225,17 @@
     margin-top: 0; } }
 
 @media (max-width: 767px) {
-  .about-us .top-block {
+  .about-us .top-info-block {
     margin-bottom: 76px; }
-    .about-us .top-block:before {
+    .about-us .top-info-block:before {
       left: 25%; }
-    .about-us .top-block .content .image img {
+    .about-us .top-info-block .content .image img {
       left: -9px; }
-    .about-us .top-block .content .text .title {
+    .about-us .top-info-block .content .text .title {
       margin-bottom: 25px; }
-    .about-us .top-block .content .text .elem {
+    .about-us .top-info-block .content .text .elem {
       margin-bottom: 15px; }
-      .about-us .top-block .content .text .elem b {
+      .about-us .top-info-block .content .text .elem b {
         margin-bottom: 15px; }
   .about-us .our-team .container:after {
     right: 75%; }
@@ -252,10 +252,10 @@
         margin-right: 0; } }
 
 @media (max-width: 575px) {
-  .about-us .top-block:before {
+  .about-us .top-info-block:before {
     left: 0;
     width: 100%; }
-  .about-us .top-block .content .text {
+  .about-us .top-info-block .content .text {
     width: 65%; }
   .about-us .our-team .container {
     padding-top: 35px; }
@@ -266,9 +266,9 @@
         margin: 0 auto 15px; } }
 
 @media (max-width: 575px) {
-  .about-us .top-block .content .image {
+  .about-us .top-info-block .content .image {
     display: none; }
-  .about-us .top-block .content .text {
+  .about-us .top-info-block .content .text {
     width: 100%; }
   .about-us .parallax {
     height: 250px; } }

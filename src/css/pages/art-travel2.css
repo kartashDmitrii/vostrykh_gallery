@@ -1,0 +1,381 @@
+.art-travel2 {
+  margin-top: -80px; }
+  .art-travel2 .banner {
+    background: url("../img/art-travel2_banner_BG.jpg") center center/cover no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    margin-bottom: 167px; }
+    .art-travel2 .banner .block {
+      width: 485px;
+      padding: 180px 20px 260px 90px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #ff5111;
+      position: relative; }
+      .art-travel2 .banner .block h2 {
+        font-weight: 600;
+        font-size: 48px;
+        color: #fff;
+        letter-spacing: 10px;
+        margin: 0 0 100px; }
+      .art-travel2 .banner .block .date, .art-travel2 .banner .block .price {
+        width: 100%;
+        color: #fff; }
+        .art-travel2 .banner .block .date p, .art-travel2 .banner .block .price p {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 18px;
+          margin: 0 0 10px; }
+        .art-travel2 .banner .block .date b, .art-travel2 .banner .block .price b {
+          display: block;
+          font-family: Futura;
+          font-weight: 700;
+          font-size: 24px; }
+      .art-travel2 .banner .block .date {
+        margin-bottom: 45px; }
+      .art-travel2 .banner .block span {
+        position: absolute;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 18px;
+        color: #ffffff;
+        top: calc( 100% - 18px - 9px);
+        left: calc( 70% + 7px);
+        width: max-content;
+        transform: rotate(-90deg) translate(50%, 50%); }
+  .art-travel2 .text-field {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 180px; }
+    .art-travel2 .text-field .wrapper {
+      width: 50%;
+      padding-right: 85px; }
+      .art-travel2 .text-field .wrapper h2 {
+        font-family: Futura;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        margin: 0 0 20px;
+        text-transform: uppercase; }
+      .art-travel2 .text-field .wrapper p {
+        text-align: justify;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 300;
+        margin-bottom: 25px; }
+      .art-travel2 .text-field .wrapper b {
+        text-transform: uppercase;
+        font-size: 16px;
+        line-height: 18px;
+        font-family: Futura;
+        font-weight: 700; }
+      .art-travel2 .text-field .wrapper h3 {
+        font-size: 24px;
+        line-height: 30px;
+        font-family: Futura;
+        font-weight: 700;
+        margin: 0 0 5px; }
+  .art-travel2 .info {
+    background: #151515;
+    padding: 230px 0 10px;
+    margin-bottom: 80px; }
+    .art-travel2 .info .container .block {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 30px;
+      grid-auto-rows: 1fr; }
+      .art-travel2 .info .container .block .news {
+        min-height: 300px;
+        padding: 30px 30px 30px 40px;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer; }
+        .art-travel2 .info .container .block .news:hover {
+          background: rgba(255, 255, 255, 0.7); }
+        .art-travel2 .info .container .block .news .title {
+          font-weight: 700;
+          font-size: 24px;
+          color: #799bff;
+          margin: 0 0 20px; }
+        .art-travel2 .info .container .block .news .text * {
+          text-align: justify;
+          color: #d6d6d6;
+          font-size: 16px;
+          line-height: 18px;
+          margin: 0 0 5px; }
+          .art-travel2 .info .container .block .news .text *:last-child {
+            margin-bottom: 0; }
+        .art-travel2 .info .container .block .news .text ul {
+          list-style: none;
+          padding: 0; }
+          .art-travel2 .info .container .block .news .text ul li {
+            padding-left: 10px;
+            position: relative; }
+            .art-travel2 .info .container .block .news .text ul li:before {
+              content: '';
+              position: absolute;
+              left: 0;
+              top: 8.5px;
+              width: 4px;
+              height: 1px;
+              background: #d6d6d6; }
+    .art-travel2 .info .container .arrows {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -35px;
+      right: 0;
+      max-width: 100vw;
+      width: calc( 35px + 35px + 100%);
+      margin: auto;
+      z-index: 2;
+      user-select: none;
+      pointer-events: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      @media (max-width: 780px) and (min-width: 767px) {
+        .art-travel2 .info .container .arrows {
+          left: 0;
+          width: 100%; } }
+      .art-travel2 .info .container .arrows .arrow {
+        width: 15px;
+        height: 25px;
+        padding: 10px;
+        background: url("../img/svg/next-blue.svg") center center/100% 100% no-repeat;
+        cursor: pointer;
+        pointer-events: auto;
+        user-select: auto; }
+        @media (max-width: 780px) and (min-width: 767px) {
+          .art-travel2 .info .container .arrows .arrow {
+            padding: 5px; } }
+        .art-travel2 .info .container .arrows .arrow.prev {
+          transform: rotate(180deg); }
+  .art-travel2 .art-team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    margin-bottom: 20px; }
+    .art-travel2 .art-team > button {
+      width: 170px;
+      padding: 10px;
+      border: 1px solid #8e8e8e;
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 500;
+      background: none;
+      outline: none;
+      margin-bottom: 100px; }
+    .art-travel2 .art-team .images {
+      display: flex;
+      overflow-x: scroll;
+      padding-bottom: 20px;
+      max-width: 100%; }
+      .art-travel2 .art-team .images .image {
+        min-width: 450px;
+        height: 300px;
+        margin-right: 30px;
+        flex: 1; }
+        .art-travel2 .art-team .images .image:last-child {
+          margin-right: 0; }
+        .art-travel2 .art-team .images .image img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center center; }
+    .art-travel2 .art-team ::-webkit-scrollbar {
+      height: 3px; }
+    .art-travel2 .art-team ::-webkit-scrollbar-track {
+      background: #f0f0f0; }
+    .art-travel2 .art-team ::-webkit-scrollbar-thumb {
+      background: #b1b1b1; }
+    .art-travel2 .art-team ::-webkit-scrollbar-thumb:hover {
+      background: #9a9a9a; }
+  .art-travel2 .participation {
+    display: flex;
+    justify-content: flex-end; }
+    .art-travel2 .participation .wrapper {
+      width: 50%;
+      padding: 150px 80px 100px;
+      background-color: #f4f8fa; }
+      .art-travel2 .participation .wrapper div h2 {
+        font-family: Futura;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        margin: 0 0 20px; }
+      .art-travel2 .participation .wrapper div ul {
+        padding-left: 30px;
+        margin: 0;
+        list-style: none;
+        margin-bottom: 20px; }
+        .art-travel2 .participation .wrapper div ul li {
+          padding-left: 40px;
+          font-size: 14px;
+          line-height: 16px;
+          margin-bottom: 8px;
+          position: relative; }
+          .art-travel2 .participation .wrapper div ul li:last-child {
+            margin-bottom: 0; }
+          .art-travel2 .participation .wrapper div ul li:before {
+            content: '';
+            width: 2px;
+            height: 2px;
+            border-radius: 50%;
+            background: #000;
+            position: absolute;
+            left: 0;
+            top: 7px; }
+  .art-travel2 .reservation {
+    margin-top: -40px;
+    padding: 215px 0 200px;
+    background: url("../img/art-travel2_reservation_BG.png") center center/cover no-repeat; }
+    .art-travel2 .reservation .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .art-travel2 .reservation h2 {
+      font-weight: 600;
+      font-size: 48px;
+      margin: 0 0 61px;
+      text-align: center;
+      position: relative;
+      padding-right: 40px;
+      text-transform: uppercase;
+      color: #ffffff; }
+      .art-travel2 .reservation h2:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: -10px;
+        width: 20px;
+        height: 20px;
+        background: #fff; }
+    .art-travel2 .reservation form input, .art-travel2 .reservation form textarea {
+      background: rgba(255, 255, 255, 0.7); }
+      .art-travel2 .reservation form input:focus, .art-travel2 .reservation form textarea:focus {
+        background: #fff; }
+    .art-travel2 .reservation .btn {
+      width: 228px;
+      background: #ff5111;
+      color: #ffffff;
+      text-transform: uppercase; }
+  .art-travel2 .parallax {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    background: url("../img/art-travel_parallax2_BG.jpg") center center/cover no-repeat fixed; }
+    .art-travel2 .parallax button {
+      width: 770px;
+      padding: 50px 25px 50px 125px;
+      background: rgba(255, 255, 255, 0.7);
+      font-weight: 600;
+      font-size: 18px;
+      text-transform: uppercase;
+      margin: 0;
+      position: relative;
+      border: none;
+      outline: none;
+      text-align: left;
+      cursor: pointer; }
+      .art-travel2 .parallax button:after {
+        content: '';
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        right: 25px;
+        transform: rotate(45deg);
+        border: solid #000;
+        border-width: 1px 1px 0 0; }
+
+@media (max-width: 1365px) {
+  .art-travel2 .info .container .slider .news {
+    padding: 30px 10px; } }
+
+@media (max-width: 1024px) {
+  .art-travel2 .text-field .wrapper {
+    padding-right: 35px;
+    width: 75%; }
+  .art-travel2 .info .container .slider .block {
+    grid-template-columns: 1fr 1fr; }
+  .art-travel2 .participation .wrapper {
+    width: 75%;
+    padding: 75px 40px 50px; } }
+
+@media (max-width: 767px) {
+  .art-travel2 .banner {
+    margin-bottom: 50px; }
+    .art-travel2 .banner .block {
+      width: 60%;
+      padding: 80px 20px 150px; }
+      .art-travel2 .banner .block span {
+        left: calc(65% + 7px); }
+  .art-travel2 .text-field {
+    margin-bottom: 60px; }
+  .art-travel2 .parallax button {
+    width: 80%;
+    padding-left: 20%; }
+  .art-travel2 .info {
+    padding-top: 70px; }
+  .art-travel2 .reservation {
+    padding: 100px 0; } }
+
+@media (max-width: 576px) {
+  .art-travel2 .banner .block {
+    width: 100%;
+    box-sizing: border-box; }
+    .art-travel2 .banner .block span {
+      left: auto;
+      right: -25%; }
+  .art-travel2 .parallax button {
+    width: 95%;
+    padding: 25px 20px;
+    font-size: 14px; }
+  .art-travel2 .info .container .slider .block {
+    grid-template-columns: 1fr;
+    justify-content: center; }
+  .art-travel2 .info .container .slider .news {
+    padding: 30px 25px; }
+  .art-travel2 .info .container .arrows {
+    left: 0;
+    width: 100%; }
+    .art-travel2 .info .container .arrows .arrow {
+      padding: 5px; }
+  .art-travel2 .art-team .images .image {
+    min-width: 100%;
+    height: 0;
+    margin-right: 15px;
+    padding-bottom: 67%;
+    overflow: hidden; }
+    .art-travel2 .art-team .images .image img {
+      height: auto; } }
+
+@media (max-width: 480px) {
+  .art-travel2 .banner .block h2 {
+    font-size: 36px; }
+  .art-travel2 .banner .block .price {
+    margin-bottom: 20px; }
+  .art-travel2 .banner .block span {
+    position: static;
+    transform: none;
+    width: 100%; }
+  .art-travel2 .text-field .wrapper {
+    width: 100%;
+    padding: 0; }
+  .art-travel2 .info .container .slider .news {
+    padding: 15px; }
+    .art-travel2 .info .container .slider .news .text * {
+      text-align: left; }
+  .art-travel2 .reservation .container h2 {
+    font-size: 36px;
+    padding-right: 0; }
+    .art-travel2 .reservation .container h2:after {
+      content: none; }
+  .art-travel2 .participation .wrapper {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 15px; } }

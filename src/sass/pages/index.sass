@@ -139,35 +139,6 @@
       font-size: 36px
       margin: 0 0 80px
       text-align: center
-    form
-      width: 100%
-      max-width: 770px
-      display: flex
-      flex-direction: column
-      input,textarea
-        font-size: 14px
-        line-height: 18px
-        color: #3d4b5b
-        border: 1px solid rgba(119, 119, 119, .21)
-        padding: 10px 14px
-        width: 100%
-        box-sizing: border-box
-        margin-bottom: 25px
-        outline: none
-        &:focus
-          background: #dbdfff
-          border-color: #dbdfff
-      textarea
-        height: 90px
-        margin-bottom: 50px
-      .field
-        display: flex
-        label
-          width: 100%
-        label:first-child
-          min-width: 270px
-          width: 270px
-          margin-right: 30px
 @media (max-width: 1365px)
   .index
     .creative-space
@@ -199,6 +170,8 @@
         margin-bottom: 40px
     .form
       margin-bottom: 80px
+      .btn
+        width: 228px
     .parallax.second
       height: 330px
 
@@ -234,10 +207,5 @@
         h2
           font-size: 32px
           margin-bottom: 25px
-    .form form .field
-      flex-direction: column
-      label
-        &:first-child
-          min-width: auto
-          width: 100%
-          margin-right: 0
+    .form .btn
+      width: 100%

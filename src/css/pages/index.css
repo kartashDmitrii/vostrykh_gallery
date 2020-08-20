@@ -138,35 +138,6 @@
       font-size: 36px;
       margin: 0 0 80px;
       text-align: center; }
-    .index .form form {
-      width: 100%;
-      max-width: 770px;
-      display: flex;
-      flex-direction: column; }
-      .index .form form input, .index .form form textarea {
-        font-size: 14px;
-        line-height: 18px;
-        color: #3d4b5b;
-        border: 1px solid rgba(119, 119, 119, 0.21);
-        padding: 10px 14px;
-        width: 100%;
-        box-sizing: border-box;
-        margin-bottom: 25px;
-        outline: none; }
-        .index .form form input:focus, .index .form form textarea:focus {
-          background: #dbdfff;
-          border-color: #dbdfff; }
-      .index .form form textarea {
-        height: 90px;
-        margin-bottom: 50px; }
-      .index .form form .field {
-        display: flex; }
-        .index .form form .field label {
-          width: 100%; }
-        .index .form form .field label:first-child {
-          min-width: 270px;
-          width: 270px;
-          margin-right: 30px; }
 
 @media (max-width: 1365px) {
   .index .creative-space {
@@ -197,6 +168,8 @@
       margin-bottom: 40px; }
   .index .form {
     margin-bottom: 80px; }
+    .index .form .btn {
+      width: 228px; }
   .index .parallax.second {
     height: 330px; } }
 
@@ -226,9 +199,5 @@
   .index .about-us .text h2, .index .why-us .container .text h2 {
     font-size: 32px;
     margin-bottom: 25px; }
-  .index .form form .field {
-    flex-direction: column; }
-    .index .form form .field label:first-child {
-      min-width: auto;
-      width: 100%;
-      margin-right: 0; } }
+  .index .form .btn {
+    width: 100%; } }
