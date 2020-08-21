@@ -201,31 +201,10 @@
     height: 560px;
     margin-bottom: 115px;
     background: url("../img/art-travel_parallax_BG.jpg") center center/cover no-repeat fixed; }
-  .art-travel .parallax.second {
-    height: 400px;
-    background: url("../img/art-travel_parallax2_BG.jpg") center center/cover no-repeat fixed; }
-    .art-travel .parallax.second button {
-      width: 770px;
-      padding: 50px 25px 50px 125px;
-      background: rgba(255, 255, 255, 0.7);
-      font-weight: 600;
-      font-size: 18px;
-      text-transform: uppercase;
-      margin: 0;
-      position: relative;
-      border: none;
-      outline: none;
-      text-align: left;
-      cursor: pointer; }
-      .art-travel .parallax.second button:after {
-        content: '';
-        width: 15px;
-        height: 15px;
-        position: absolute;
-        right: 25px;
-        transform: rotate(45deg);
-        border: solid #000;
-        border-width: 1px 1px 0 0; }
+
+.art-travel .parallax-with-btn {
+  height: 400px;
+  background: url("../img/art-travel_parallax2_BG.jpg") center center/cover no-repeat fixed; }
 
 .art-travel .reservation {
   display: flex;

@@ -263,34 +263,9 @@
       background: #ff5111;
       color: #ffffff;
       text-transform: uppercase; }
-  .art-travel2 .parallax {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .art-travel2 .parallax-with-btn {
     height: 400px;
     background: url("../img/art-travel_parallax2_BG.jpg") center center/cover no-repeat fixed; }
-    .art-travel2 .parallax button {
-      width: 770px;
-      padding: 50px 25px 50px 125px;
-      background: rgba(255, 255, 255, 0.7);
-      font-weight: 600;
-      font-size: 18px;
-      text-transform: uppercase;
-      margin: 0;
-      position: relative;
-      border: none;
-      outline: none;
-      text-align: left;
-      cursor: pointer; }
-      .art-travel2 .parallax button:after {
-        content: '';
-        width: 15px;
-        height: 15px;
-        position: absolute;
-        right: 25px;
-        transform: rotate(45deg);
-        border: solid #000;
-        border-width: 1px 1px 0 0; }
 
 @media (max-width: 1365px) {
   .art-travel2 .info .container .slider .news {
@@ -316,9 +291,6 @@
         left: calc(65% + 7px); }
   .art-travel2 .text-field {
     margin-bottom: 60px; }
-  .art-travel2 .parallax button {
-    width: 80%;
-    padding-left: 20%; }
   .art-travel2 .info {
     padding-top: 70px; }
   .art-travel2 .reservation {
@@ -331,10 +303,6 @@
     .art-travel2 .banner .block span {
       left: auto;
       right: -25%; }
-  .art-travel2 .parallax button {
-    width: 95%;
-    padding: 25px 20px;
-    font-size: 14px; }
   .art-travel2 .info .container .slider .block {
     grid-template-columns: 1fr;
     justify-content: center; }

@@ -1,0 +1,316 @@
+.blog-level-3
+  .banner
+    display: flex
+    flex-direction: column
+    width: 770px
+    margin: 0 auto 100px
+    .title
+      font-weight: 800
+      font-size: 24px
+      text-transform: uppercase
+      padding-left: 35px
+      position: relative
+      margin: 0 0 20px
+      &:before
+        content: ''
+        width: 20px
+        height: 20px
+        position: absolute
+        left: 0
+        top: 0
+        bottom: 0
+        margin: auto
+        background: #162443
+    .info
+      display: flex
+      flex-wrap: wrap
+      font-weight: 300
+      font-size: 14px
+      line-height: 14px
+      color: #6d6d6d
+      margin-bottom: 25px
+      *
+        margin-right: 10px
+        &:last-child
+          margin-right: 0
+    .image
+      border-radius: 6px
+      width: 100%
+      display: flex
+      box-shadow: 0 15px 15.36px 0.64px rgba(92, 110, 161, 0.22)
+      img
+        object-fit: cover
+        object-position: center center
+  .info-block
+    position: relative
+    h2
+      font-family: Futura
+      font-weight: 700
+      font-size: 24px
+      margin-bottom: 100px
+      text-align: justify
+    .user-btns
+      position: absolute
+      right: 0
+      top: 0
+      transform: translateX(100%)
+      display: flex
+      flex-direction: column
+      align-items: center
+      button
+        width: 17px
+        height: 17px
+        padding: 10px
+        box-sizing: content-box
+        border: none
+        display: flex
+        align-items: center
+        justify-content: center
+        background: transparent
+        cursor: pointer
+        outline: none
+        &.like
+          transform: scale(-1, 1)
+        &.active
+          width: 27px
+          height: 27px
+        img
+          width: 100%
+          height: 100%
+  .content
+    margin-bottom: 20px
+    *
+      font-size: 16px
+      margin: 0 0 10px
+    p
+      font-weight: 300
+      text-align: justify
+    .img-block
+      margin: 100px 0 170px
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      .image
+        width: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        img
+          box-shadow: 0 16px 26.73px 0.27px rgba(92, 110, 161, 0.17)
+          width: 80%
+          height: auto
+    blockquote
+      font-weight: 300
+      font-style: italic
+      font-size: 16px
+      padding: 10px 30px
+      position: relative
+      margin-bottom: 40px
+      &:before
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        height: 100%
+        width: 15px
+        background: #000
+    ul
+      padding-left: 75px
+      margin: 0 0 45px
+      list-style: none
+      li
+        padding-left: 40px
+        position: relative
+        margin-bottom: 10px
+        font-weight: 500
+        font-size: 14px
+        line-height: 18px
+        &:last-child
+          margin-bottom: 0
+        &:before
+          content: ''
+          position: absolute
+          left: 0
+          top: 8px
+          width: 2px
+          height: 2px
+          border-radius: 50%
+          background: #000
+  .popular
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 50%
+      height: 450px
+      background: #f4f8fa
+    .container
+      display: flex
+      flex-direction: column
+      h2
+        color: #f4f8fa
+        align-self: flex-end
+        font-weight: 600
+        font-size: 48px
+        padding-right: 10%
+        margin: 0 0 35px
+      .title
+        font-size: 14px
+        line-height: 18px
+        text-transform: uppercase
+        font-weight: 300
+        margin: 0 0 50px
+    .slider
+      position: relative
+      z-index: 3
+      .wrapper
+        overflow-x: scroll
+        width: 100%
+        position: relative
+        &::-webkit-scrollbar
+          height: 1px
+          width: 1px
+        &::-webkit-scrollbar-track
+          background: transparent
+        &::-webkit-scrollbar-thumb
+          background: transparent
+        &::-webkit-scrollbar-thumb:hover
+          background: transparent
+        .blocks
+          width: max-content
+          display: flex
+          align-items: flex-end
+          box-sizing: border-box
+          padding: 0 80px 50px
+          margin-bottom: 50px
+          .elem
+            flex: 1
+            display: flex
+            flex-direction: column
+            box-sizing: border-box
+            box-shadow: 0 16px 26.73px 0.27px rgba(92, 110, 161, 0.17)
+            margin: 0 20px
+            width: min-content
+            .image
+              width: auto
+              img
+                width: auto
+            .text
+              display: flex
+              flex-direction: column
+              justify-content: space-around
+              flex: 1
+              padding: 20px
+              background: #fff
+              font-size: 14px
+              font-weight: 300
+              .name
+                font-weight: 700
+                line-height: 14px
+                margin: 0 0 15px
+                text-transform: uppercase
+              .short-desc
+                margin: 0 0 15px
+                &:after
+                  content: '...'
+              .read
+                margin: 0
+                color: #1170ff
+      .arrows
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        user-select: none
+        pointer-events: none
+        margin: auto
+        display: flex
+        align-items: center
+        justify-content: space-between
+        .arrow
+          position: relative
+          right: 30px
+          width: 60px
+          height: 60px
+          background: url("../img/svg/next-white.svg") center center / 50% 50% no-repeat #2e45f1
+          pointer-events: auto
+          border-radius: 50%
+          user-select: auto
+          cursor: pointer
+          &.prev
+            right: auto
+            left: 30px
+            transform: rotate(180deg)
+
+@media (max-width: 1100px)
+  .blog-level-3
+    .info-block
+      .short-desc
+        padding-right: 60px
+      .user-btns
+        transform: none
+
+@media (max-width: 1024px)
+  .blog-level-3
+    .popular
+      &:before
+        width: 40%
+      .container h2
+        padding-right: 0
+
+@media (max-width: 768px)
+  .blog-level-3
+    .banner
+      width: 100%
+    .info-block h2
+      margin-bottom: 40px
+    .content .img-block
+      margin-bottom: 40px
+    .popular .slider .wrapper .blocks .elem
+      .image
+        img
+          max-width: 60vw
+
+@media (max-width: 568px)
+  .blog-level-3
+    .info-block
+      display: flex
+      flex-direction: column-reverse
+      .user-btns
+        position: static
+        flex-direction: row
+        justify-content: space-between
+        button
+          width: 25px
+          height: 25px
+      .short-desc
+        padding-right: 0
+    .popular
+      &:before
+        content: none
+      .slider
+        .wrapper .blocks
+          padding: 0 30px 30px
+        .arrows .arrow
+          right: 10px
+          width: 30px
+          height: 30px
+          &.prev
+            left: 10px
+
+@media (max-width: 480px)
+  .blog-level-3
+    .banner
+      margin-bottom: 40px
+    .content
+      ul
+        padding-left: 0
+    .popular
+      .container h2
+        font-size: 36px
+      .slider
+        .wrapper.blocks
+          padding: 0 10px 30px

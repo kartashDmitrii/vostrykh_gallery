@@ -73,3 +73,42 @@ if (document.querySelector('.art-travel2 .info .container .slider')) {
         document.querySelector('.art-travel2 .info .container .arrows').remove()
     }
 }
+
+if (document.querySelector('.blog .elem.small')){
+    document.querySelectorAll('.blog .elem.small').forEach( (elem, i)=>{
+        switch (i%6){
+            case 2:
+            case 3:
+                elem.style.alignSelf = 'center'
+                break
+            case 4:
+            case 5:
+                elem.style.alignSelf = 'flex-start'
+                break
+        }
+    })
+}
+
+if (document.querySelector('.blog-level-3 .popular .slider')){
+    let startCordX = 0
+    let drag = function (event){
+        event.preventDefault();
+        this.scrollLeft = this.scrollLeft + (startCordX - event.clientX);
+        startCordX = event.clientX
+    }
+    let startDrag = function (event){
+        this.style.cursor = 'grabbing'
+        startCordX = event.clientX
+        event.stopPropagation();
+        this.addEventListener('mousemove', drag)
+    }
+    let endDrag = function (event){
+        this.style.cursor = 'grab'
+        startCordX = 0
+        event.stopPropagation();
+        this.removeEventListener('mousemove', drag)
+    }
+    document.querySelector('.blog-level-3 .popular .wrapper').addEventListener('mousedown', startDrag)
+    document.querySelector('.blog-level-3 .popular .wrapper').addEventListener('mouseup', endDrag)
+    document.querySelector('.blog-level-3 .popular .wrapper').addEventListener('mouseleave', endDrag)
+}

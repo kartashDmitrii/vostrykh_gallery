@@ -1,0 +1,39 @@
+.parallax-with-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  background: url("../img/art-travel_parallax2_BG.jpg") center center/cover no-repeat fixed; }
+  .parallax-with-btn button {
+    width: 770px;
+    padding: 50px 25px 50px 125px;
+    background: rgba(255, 255, 255, 0.7);
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 0;
+    position: relative;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer; }
+    .parallax-with-btn button:after {
+      content: '';
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      right: 25px;
+      transform: rotate(45deg);
+      border: solid #000;
+      border-width: 1px 1px 0 0; }
+
+@media (max-width: 767px) {
+  .parallax-with-btn button {
+    width: 80%;
+    padding-left: 20%; } }
+
+@media (max-width: 576px) {
+  .parallax-with-btn button {
+    width: 95%;
+    padding: 25px 20px;
+    font-size: 14px; } }
