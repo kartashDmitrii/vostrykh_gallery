@@ -168,6 +168,14 @@ img {
   border: none;
   cursor: pointer; }
 
+@keyframes stretch {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.5;
+    transform: scale(0.1);
+    border-radius: 100%; } }
+
 header {
   padding: 30px 0;
   background: transparent;
@@ -191,6 +199,13 @@ header {
       header .container .menu p {
         font-size: 18px;
         margin: 0; }
+  header.scroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background: #fff; }
 
 @media (max-width: 480px) {
   header {
@@ -221,6 +236,8 @@ footer {
         width: 34px;
         height: 23px;
         margin-right: 0; }
+      footer .social a:hover {
+        filter: contrast(175%) brightness(3%); }
   footer p {
     font-size: 11px;
     line-height: 24px; }
@@ -486,22 +503,49 @@ form.custom-form {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: url("../img/creative-space_bg.png") 115px center no-repeat;
     padding: 261px 0 77px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    position: relative; }
+    .index .creative-space:hover .hidden {
+      opacity: 0; }
+    .index .creative-space img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      object-position: top center;
+      z-index: 0;
+      transition: all .6s; }
+      .index .creative-space img:last-child {
+        z-index: -1; }
     .index .creative-space h2 {
       font-weight: 700;
       color: #fff;
       font-size: 48px;
       letter-spacing: 20px;
       text-align: center;
-      margin: 0 0 47px; }
+      margin: 0 0 47px;
+      position: relative;
+      z-index: 1; }
+      .index .creative-space h2:after {
+        content: '';
+        position: absolute;
+        height: 131px;
+        right: -300px;
+        top: 0;
+        transform: translateY(-33%);
+        z-index: -1;
+        width: 440px;
+        background: url("../img/blue-stroke-paint-brush.png") center center/100% 100% no-repeat; }
     .index .creative-space p {
       font-size: 16px;
       color: #fff;
       margin: 0 0 100px;
       padding-left: 31px;
-      position: relative; }
+      position: relative;
+      z-index: 1; }
       .index .creative-space p:before {
         content: '';
         position: absolute;
@@ -515,7 +559,9 @@ form.custom-form {
     .index .creative-space a {
       color: #fff;
       font-size: 16px;
-      font-weight: 800; }
+      font-weight: 800;
+      position: relative;
+      z-index: 1; }
   .index .about-us, .index .why-us .container {
     display: flex;
     align-items: flex-start;
@@ -571,6 +617,8 @@ form.custom-form {
         color: #4c4c4c;
         margin: 0 auto;
         text-transform: uppercase; }
+        .index .about-us .text a:hover, .index .why-us .container .text a:hover {
+          text-decoration: none; }
   .index .parallax {
     display: flex;
     align-items: center;
@@ -625,6 +673,13 @@ form.custom-form {
     background-position: left center;
     background-size: auto 100%; } }
 
+@media (max-width: 1200px) {
+  .index .creative-space h2:after {
+    width: 330px;
+    height: 100px;
+    right: -200px;
+    transform: translateY(-24%); } }
+
 @media (max-width: 1023px) {
   .index .creative-space {
     max-width: none;
@@ -659,6 +714,8 @@ form.custom-form {
     width: 80%; } }
 
 @media (max-width: 575px) {
+  .index .creative-space h2:after {
+    content: none; }
   .index .form h2 {
     margin-bottom: 30px; }
   .index .why-us {

@@ -13,6 +13,8 @@ footer {
         width: 34px;
         height: 23px;
         margin-right: 0; }
+      footer .social a:hover {
+        filter: contrast(175%) brightness(3%); }
   footer p {
     font-size: 11px;
     line-height: 24px; }

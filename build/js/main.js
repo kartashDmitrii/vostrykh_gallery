@@ -1,3 +1,23 @@
+/*        event to skroll header  */
+
+if (document.querySelector('header')){
+    window.addEventListener('scroll', function (){
+        let header = document.querySelector('header')
+        if (window.scrollY > 0){
+            document.querySelector('header').classList.add('scroll')
+            document.body.style.marginTop = `${header.offsetHeight}px`
+        } else {
+            document.querySelector('header').classList.remove('scroll')
+            document.body.style.marginTop = '0'
+        }
+    })
+}
+
+/*        event to skroll header  */
+
+
+/*     event to scroll images on art-travel page     */
+
 if(document.querySelector('.art-travel2 .art-team .images')) {
     let startCordX = 0
     let drag = function (event){
@@ -24,6 +44,11 @@ if(document.querySelector('.art-travel2 .art-team .images')) {
         this.removeEventListener('mousemove', drag)
     })
 }
+/*     event to scroll images on art-travel page     */
+
+
+/*     event to make slider on art-travel page     */
+
 if (document.querySelector('.art-travel2 .info .container .slider')) {
     let resolution = {
         '0': 1,
@@ -74,6 +99,10 @@ if (document.querySelector('.art-travel2 .info .container .slider')) {
     }
 }
 
+/*     event to make slider on art-travel page     */
+
+/*     event to grid news on blog page    */
+
 if (document.querySelector('.blog .elem.small')){
     document.querySelectorAll('.blog .elem.small').forEach( (elem, i)=>{
         switch (i%6){
@@ -88,6 +117,10 @@ if (document.querySelector('.blog .elem.small')){
         }
     })
 }
+
+/*     event to grid news on blog page    */
+
+/*     event to scroll images on blog-level-3 page     */
 
 if (document.querySelector('.blog-level-3 .popular .slider')){
     let startCordX = 0
@@ -112,3 +145,5 @@ if (document.querySelector('.blog-level-3 .popular .slider')){
     document.querySelector('.blog-level-3 .popular .wrapper').addEventListener('mouseup', endDrag)
     document.querySelector('.blog-level-3 .popular .wrapper').addEventListener('mouseleave', endDrag)
 }
+
+/*     event to scroll images on blog-level-3 page     */
