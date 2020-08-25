@@ -146,8 +146,16 @@ if (document.querySelector('.blog-level-3 .popular .slider')){
     slider.querySelector('.wrapper').addEventListener('mouseup', endDrag)
     slider.querySelector('.wrapper').addEventListener('mouseleave', endDrag)
     slider.querySelectorAll('.arrows .arrow').forEach(elem => {
-        elem.addEventListener('click', function (){
+        elem.addEventListener('click', function () {
             slider.querySelector('.wrapper').style.scrollBehavior = 'smooth'
+            if (elem.classList.contains('next')) {
+                slider.querySelector('.wrapper').scrollLeft += slider.querySelector('.wrapper').offsetWidth
+            }
+            if (elem.classList.contains('prev')) {
+                slider.querySelector('.wrapper').scrollLeft -= slider.querySelector('.wrapper').offsetWidth
+            }
+            slider.querySelector('.wrapper').style.scrollBehavior = 'auto'
+            /*slider.querySelector('.wrapper').style.scrollBehavior = 'smooth'
             let currentOffset = 0,
                 checkFlag = true,
                 sliderOffsetLeft = slider.querySelector('.wrapper').scrollLeft + 100,
@@ -168,6 +176,7 @@ if (document.querySelector('.blog-level-3 .popular .slider')){
                 slider.querySelector('.wrapper').scrollLeft = currentOffset - nextOffset - 40
             }
             slider.querySelector('.wrapper').style.scrollBehavior = 'auto'
+        })*/
         })
     })
 }
