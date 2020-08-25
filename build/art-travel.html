@@ -15,9 +15,38 @@
         <div class="logo">
             <p>VOSTRYKH GALLERY</p>
         </div>
-        <div class="menu">
-            <img src="img/svg/menu.svg" alt="menu">
+        <div class="menu-burger">
+            <a href="" class="menu-icon-toggle"><span></span></a>
+            <i class="menu-background top"></i>
+            <i class="menu-background middle"></i>
+            <i class="menu-background bottom"></i>
             <p>Menu</p>
+        </div>
+    </div>
+    <div class="header-popup menu">
+        <div class="container">
+            <ul class="menu-items">
+                <li><a href="#">О НАС</a></li>
+                <li><a href="#">КУРСЫ</a></li>
+                <li><a href="#">ПЛЕНЭРЫ</a></li>
+                <li><a href="#">МАСТЕР-КЛАССЫ</a></li>
+                <li><a href="#">КУРСЫ</a></li>
+                <li><a href="#">О НАС</a></li>
+            </ul>
+            <div class="footer">
+                <div class="social">
+                    <a href="" class="facebook">
+                        <img src="img/svg/facebook.svg" alt="facebook">
+                    </a>
+                    <a href="" class="instagram">
+                        <img src="img/svg/instagram.svg" alt="instagram">
+                    </a>
+                    <a href="" class="youtube">
+                        <img src="img/svg/youtube.svg" alt="youtube">
+                    </a>
+                </div>
+                <p>Copyright © 2019 Vostrykh Gallery. All rights reserved</p>
+            </div>
         </div>
     </div>
 </header>
@@ -47,7 +76,7 @@
     <div class="directions">
         <div class="container">
             <div class="grid">
-                <div class="elem">
+                <div class="elem" data-popup="directions-popup">
                     <div class="wrapper">
                         <span class="number">01</span>
                         <p class="name">ПОРТУГАЛИЯ</p>
@@ -189,6 +218,24 @@
     </div>
     <p>Copyright © 2019 Vostrykh Gallery. All rights reserved</p>
 </footer>
+
+<div class="directions-popup">
+    <div class="title">
+        <h2>PORTUGAL</h2>
+    </div>
+    <div class="text">
+        <div class="content">
+            <p><b>РИСУЕМ  В ПОРТУГАЛИИ</b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus
+                commodo viverra maecenas accumsan lacus vel facilisis.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
+                lacus vel facilisis. accumsan lacus vel facilisis. </p>
+        </div>
+        <a class="link" href="#">ПРОГРАММА</a>
+    </div>
+    <div class="close"></div>
+</div>
 <script src="js/lib.js"></script>
 <script src="js/main.js"></script>
 </body>

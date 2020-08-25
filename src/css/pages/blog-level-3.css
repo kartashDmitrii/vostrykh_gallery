@@ -69,6 +69,8 @@
       background: transparent;
       cursor: pointer;
       outline: none; }
+      .blog-level-3 .info-block .user-btns button:hover {
+        filter: contrast(175%) brightness(3%); }
       .blog-level-3 .info-block .user-btns button.like {
         transform: scale(-1, 1); }
       .blog-level-3 .info-block .user-btns button.active {
@@ -267,7 +269,13 @@
   .blog-level-3 .content .img-block {
     margin-bottom: 40px; }
   .blog-level-3 .popular .slider .wrapper .blocks .elem .image img {
-    max-width: 60vw; } }
+    max-width: 60vw; }
+  .blog-level-3 .popular .slider .arrows .arrow {
+    right: 10px;
+    width: 30px;
+    height: 30px; }
+    .blog-level-3 .popular .slider .arrows .arrow.prev {
+      left: 10px; } }
 
 @media (max-width: 568px) {
   .blog-level-3 .info-block {
@@ -286,12 +294,8 @@
     content: none; }
   .blog-level-3 .popular .slider .wrapper .blocks {
     padding: 0 30px 30px; }
-  .blog-level-3 .popular .slider .arrows .arrow {
-    right: 10px;
-    width: 30px;
-    height: 30px; }
-    .blog-level-3 .popular .slider .arrows .arrow.prev {
-      left: 10px; } }
+  .blog-level-3 .popular .slider .arrows {
+    display: none; } }
 
 @media (max-width: 480px) {
   .blog-level-3 .banner {

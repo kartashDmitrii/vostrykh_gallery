@@ -16,7 +16,10 @@
     border: none;
     outline: none;
     text-align: left;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: all .3s; }
+    .parallax-with-btn button:hover {
+      transform: scale(1.1); }
     .parallax-with-btn button:after {
       content: '';
       width: 15px;

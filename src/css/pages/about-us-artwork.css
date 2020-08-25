@@ -11,7 +11,12 @@
   width: 33.333%; }
 
 .about-us-artwork .gallery #grid .paint {
-  margin: 0 10px; }
+  margin: 0 10px;
+  transition: all .3s;
+  text-decoration: none;
+  color: #000; }
+  .about-us-artwork .gallery #grid .paint:hover {
+    transform: scale(1.1); }
 
 .about-us-artwork .gallery #grid > div:first-child .paint {
   margin-right: 20px;

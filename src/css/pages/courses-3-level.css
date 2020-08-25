@@ -14,6 +14,10 @@
       width: 180px;
       margin-right: 57px;
       font-weight: 500; }
+      .courses-3-level .banner .buttons .btn:hover {
+        border-color: transparent;
+        color: #fff;
+        transform: scale(1.1); }
       .courses-3-level .banner .buttons .btn:last-child {
         margin-right: 0; }
   .courses-3-level .banner p {
@@ -116,10 +120,11 @@
       .courses-3-level .program .container .text > a {
         font-weight: 500;
         text-transform: uppercase;
-        text-decoration: none;
         color: #4c4c4c;
         text-align: center;
         align-self: center; }
+        .courses-3-level .program .container .text > a:hover {
+          text-decoration: none; }
 
 .courses-3-level .parallax {
   display: flex;
@@ -139,7 +144,10 @@
     font-size: 14px;
     line-height: 14px;
     font-weight: 500;
-    text-decoration: none; }
+    text-decoration: none;
+    transition: all .3s; }
+    .courses-3-level .parallax a:hover {
+      transform: scale(1.1); }
 
 .courses-3-level .modules {
   display: flex;
@@ -150,7 +158,8 @@
     margin-bottom: 15px;
     position: relative;
     box-sizing: border-box;
-    box-shadow: 7px 7px 12px 0 rgba(216, 229, 240, 0.75); }
+    box-shadow: 7px 7px 12px 0 rgba(216, 229, 240, 0.75);
+    transition: all .3s; }
     .courses-3-level .modules .module:last-child {
       margin-bottom: 0; }
     .courses-3-level .modules .module .index {
@@ -159,7 +168,9 @@
       align-items: center;
       justify-content: flex-end;
       padding: 45px;
-      background: #e3ecf4; }
+      background: #e3ecf4;
+      transition: all .3s;
+      max-height: 225px; }
       .courses-3-level .modules .module .index p {
         font-weight: 600;
         font-size: 18px;
@@ -172,7 +183,8 @@
       position: relative;
       width: 100%;
       cursor: pointer;
-      box-sizing: border-box; }
+      box-sizing: border-box;
+      transition: all .3s; }
       .courses-3-level .modules .module .text .name {
         width: 100%;
         position: relative; }
@@ -192,6 +204,8 @@
         display: none; }
       .courses-3-level .modules .module .text .remark {
         display: none; }
+    .courses-3-level .modules .module:not(:first-child).selected {
+      margin-top: 150px; }
     .courses-3-level .modules .module.selected {
       width: 100%;
       flex-direction: column;
@@ -199,20 +213,21 @@
       padding: 90px 50px 210px; }
       .courses-3-level .modules .module.selected .index {
         position: absolute;
-        left: -90px;
-        top: -128px;
-        height: 100%;
-        width: 20%;
-        justify-content: center;
-        background: #353fff; }
+        left: -30%;
+        top: 30px;
+        width: 50%;
+        height: 40%;
+        justify-content: flex-start;
+        background: #353fff;
+        overflow: hidden;
+        transform: rotate(-90deg); }
         .courses-3-level .modules .module.selected .index p {
           color: #fff;
           font-size: 48px;
           position: relative;
-          min-width: 600px;
-          transform: rotate(-90deg);
           padding-left: 30px;
-          margin-bottom: 125px; }
+          margin-bottom: 0;
+          margin-left: 100px; }
           .courses-3-level .modules .module.selected .index p:before {
             content: '';
             width: 20px;
@@ -228,7 +243,8 @@
         .courses-3-level .modules .module.selected .text .name {
           font-weight: 500;
           font-size: 16px;
-          margin-bottom: 30px; }
+          margin-bottom: 30px;
+          text-transform: uppercase; }
           .courses-3-level .modules .module.selected .text .name:after {
             content: none; }
         .courses-3-level .modules .module.selected .text .desc {
@@ -301,6 +317,8 @@
     font-size: 14px;
     font-weight: 500;
     color: #8b8a8a; }
+    .courses-3-level .students-work a:hover {
+      text-decoration: none; }
 
 .courses-3-level .price {
   display: flex;
@@ -357,6 +375,10 @@
         display: flex;
         align-items: center;
         justify-content: center; }
+        .courses-3-level .price .block .desc .btn:hover {
+          border-color: transparent;
+          background: #d8e5f0;
+          color: #fff; }
     .courses-3-level .price .block:last-child {
       margin-right: 0; }
     .courses-3-level .price .block:first-child .desc {
@@ -364,9 +386,16 @@
       .courses-3-level .price .block:first-child .desc li {
         font-weight: 500; }
 
+@media (max-width: 1365px) {
+  .courses-3-level .modules .module.selected .index {
+    padding: 30px; } }
+
 @media (max-width: 1199px) {
   .courses-3-level .modules .module.selected {
-    padding-bottom: 140px; } }
+    padding-bottom: 140px; }
+    .courses-3-level .modules .module.selected .index {
+      left: -20%;
+      height: 35%; } }
 
 @media (max-width: 1024px) {
   .courses-3-level .banner {
@@ -390,12 +419,16 @@
         margin-bottom: 50px; }
   .courses-3-level .modules {
     margin-bottom: 80px; }
+    .courses-3-level .modules .module:not(:first-child).selected {
+      margin-top: 100px; }
     .courses-3-level .modules .module.selected {
       padding: 40px 20px 80px; }
       .courses-3-level .modules .module.selected .text {
         width: 80%; }
-      .courses-3-level .modules .module.selected .index p {
-        margin-bottom: 230px; }
+      .courses-3-level .modules .module.selected .index {
+        left: -30%; }
+        .courses-3-level .modules .module.selected .index p {
+          margin: 0; }
   .courses-3-level .students-work {
     margin-bottom: 100px; }
     .courses-3-level .students-work .wrapper h2 {
@@ -424,18 +457,25 @@
   .courses-3-level .program .container .image {
     width: 90%;
     margin-bottom: 45px; }
+  .courses-3-level .modules .module:not(:first-child).selected {
+    margin-top: 0; }
   .courses-3-level .modules .module .index {
     width: 35%;
-    padding: 25px; }
+    padding: 25px;
+    box-sizing: border-box; }
     .courses-3-level .modules .module .index p {
       font-size: 14px; }
-  .courses-3-level .modules .module.selected .index {
-    left: -40px;
-    width: 15%; }
-    .courses-3-level .modules .module.selected .index p {
-      font-size: 36px; }
-  .courses-3-level .modules .module.selected .text {
-    width: 85%; }
+  .courses-3-level .modules .module.selected {
+    padding: 0 0 80px; }
+    .courses-3-level .modules .module.selected .index {
+      position: static;
+      transform: none;
+      width: 100%;
+      margin-bottom: 30px; }
+      .courses-3-level .modules .module.selected .index p {
+        font-size: 36px; }
+    .courses-3-level .modules .module.selected .text {
+      width: 100%; }
   .courses-3-level .price {
     flex-direction: column; }
     .courses-3-level .price .block {

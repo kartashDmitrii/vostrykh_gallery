@@ -265,6 +265,8 @@
       font-size: 14px;
       color: #333333;
       margin-bottom: 110px; }
+      .art-travel .photo .container > a:hover {
+        text-decoration: none; }
 
 @media (max-width: 1024px) {
   .art-travel .banner {

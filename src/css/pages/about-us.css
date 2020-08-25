@@ -147,6 +147,8 @@
               text-transform: uppercase;
               padding-right: 9px;
               position: relative; }
+              .about-us .our-team .container .team .employee .text a:hover {
+                text-decoration: none; }
               .about-us .our-team .container .team .employee .text a:after {
                 content: '';
                 width: 8px;

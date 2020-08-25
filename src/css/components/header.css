@@ -1,24 +1,26 @@
 header {
-  padding: 30px 0;
   background: transparent;
   position: relative;
   z-index: 1; }
-  header .container {
+  header > .container {
+    padding-top: 30px;
+    padding-bottom: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    header .container .logo p {
+    header > .container .logo p {
       margin: 0;
       font-size: 18px;
       font-weight: 600; }
-    header .container .menu {
+    header > .container .menu-burger {
       display: flex;
-      align-items: center; }
-      header .container .menu img {
+      align-items: center;
+      cursor: pointer; }
+      header > .container .menu-burger img {
         width: 18px;
         height: 16px;
         margin-right: 13px; }
-      header .container .menu p {
+      header > .container .menu-burger p {
         font-size: 18px;
         margin: 0; }
   header.scroll {
@@ -30,15 +32,9 @@ header {
     background: #fff; }
 
 @media (max-width: 480px) {
-  header {
-    padding: 15px 0; } }
+  header .container {
+    padding-top: 15px;
+    padding-bottom: 15px; } }
   @media (max-width: 480px) and (max-width: 480px) {
     header .container .logo p {
-      font-size: 14px; } }
-
-@media (max-width: 480px) {
-    header .container .menu img {
-      width: 16px;
-      height: 14px; }
-    header .container .menu p {
       font-size: 14px; } }

@@ -1,0 +1,27 @@
+.thanks-page {
+  height: 100vh;
+  margin-top: -90px;
+  background: url("../img/thanks-page_BG.png") center bottom #2e45f1 no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .thanks-page .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .thanks-page .container h2 {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 48px;
+      margin: 0 0 36px; }
+    .thanks-page .container p {
+      font-size: 16px;
+      line-height: 30px;
+      color: #fff;
+      margin: 0;
+      text-align: center; }
+
+@media (max-width: 480px) {
+  .thanks-page {
+    margin-top: -60px; } }

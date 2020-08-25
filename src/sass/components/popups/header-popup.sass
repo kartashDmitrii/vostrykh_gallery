@@ -1,0 +1,97 @@
+.header-popup
+  width: 100vw
+  height: 100vh
+  position: fixed
+  z-index: 22
+  margin-top: -65px
+  .container
+    margin-top: -30px
+    display: flex
+    flex-direction: column
+    align-items: center
+    height: 100%
+    box-sizing: border-box
+    ul.menu-items
+      flex: 1
+      display: flex
+      flex-direction: column
+      padding: 0
+      margin: 0
+      list-style: none
+      justify-content: center
+      width: 470px
+      li
+        width: 100%
+        font-size: 18px
+        font-weight: 300
+        color: #f1f1f1
+        border-bottom: 1px solid #828282
+        text-align: center
+        display: flex
+        transition: all .3s
+        &:hover
+          color: #fff
+          border-color: #fff
+        a
+          width: 100%
+          height: 100%
+          text-decoration: none
+          padding: 30px
+          color: inherit
+          box-sizing: border-box
+    .footer
+      display: flex
+      justify-content: space-between
+      height: 46px
+      width: 100%
+      .social
+        display: flex
+        align-items: center
+        a
+          width: 27px
+          height: 27px
+          margin-right: 13px
+          &.youtube
+            width: 34px
+            height: 23px
+            margin-right: 0
+          &:hover
+            filter: contrast(3%) brightness(175%)
+      p
+        font-size: 11px
+        line-height: 24px
+        color: #fff
+  .close
+    display: block
+    position: absolute
+    top: 57px
+    right: 93px
+    width: 32px
+    height: 32px
+    background: url("../img/svg/close-grey.svg") center center / 100% 100% no-repeat
+    cursor: pointer
+    z-index: 3
+
+@media (max-width: 576px)
+  .header-popup
+    .container
+      ul.menu-items
+        width: 100%
+    .close
+      right: 20px
+      top: 20px
+      width: 20px
+      height: 20px
+
+@media (max-width: 480px)
+  .header-popup
+    margin-top: -15px
+    .footer
+      flex-direction: column
+      padding: 12px 10px
+      p
+        text-align: center
+        width: 100%
+        margin-bottom: 0
+        align-self: flex-end
+

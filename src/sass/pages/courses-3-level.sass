@@ -15,6 +15,10 @@
         width: 180px
         margin-right: 57px
         font-weight: 500
+        &:hover
+          border-color: transparent
+          color: #fff
+          transform: scale(1.1)
         &:last-child
           margin-right: 0
     p
@@ -115,10 +119,11 @@
         >a
           font-weight: 500
           text-transform: uppercase
-          text-decoration: none
           color: #4c4c4c
           text-align: center
           align-self: center
+          &:hover
+            text-decoration: none
   .parallax
     display: flex
     align-items: center
@@ -138,6 +143,9 @@
       line-height: 14px
       font-weight: 500
       text-decoration: none
+      transition: all .3s
+      &:hover
+        transform: scale(1.1)
   .modules
     display: flex
     flex-direction: column
@@ -148,6 +156,7 @@
       position: relative
       box-sizing: border-box
       box-shadow: 7px 7px 12px 0 rgba(216,229,240,0.75)
+      transition: all .3s
       &:last-child
         margin-bottom: 0
       .index
@@ -157,6 +166,8 @@
         justify-content: flex-end
         padding: 45px
         background: #e3ecf4
+        transition: all .3s
+        max-height: 225px
         p
           font-weight: 600
           font-size: 18px
@@ -170,6 +181,7 @@
         width: 100%
         cursor: pointer
         box-sizing: border-box
+        transition: all .3s
         .name
           width: 100%
           position: relative
@@ -189,6 +201,8 @@
           display: none
         .remark
           display: none
+      &:not(:first-child).selected
+        margin-top: 150px
       &.selected
         width: 100%
         flex-direction: column
@@ -196,20 +210,21 @@
         padding: 90px 50px 210px
         .index
           position: absolute
-          left: -90px
-          top: -128px
-          height: 100%
-          width: 20%
-          justify-content: center
+          left: -30%
+          top: 30px
+          width: 50%
+          height: 40%
+          justify-content: flex-start
           background: #353fff
+          overflow: hidden
+          transform: rotate(-90deg)
           p
             color: #fff
             font-size: 48px
             position: relative
-            min-width: 600px
-            transform: rotate(-90deg)
             padding-left: 30px
-            margin-bottom: 125px
+            margin-bottom: 0
+            margin-left: 100px
             &:before
               content: ''
               width: 20px
@@ -226,6 +241,7 @@
             font-weight: 500
             font-size: 16px
             margin-bottom: 30px
+            text-transform: uppercase
             &:after
               content: none
           .desc
@@ -298,6 +314,8 @@
       font-size: 14px
       font-weight: 500
       color: #8b8a8a
+      &:hover
+        text-decoration: none
   .price
     display: flex
     margin-bottom: 187px
@@ -353,6 +371,10 @@
           display: flex
           align-items: center
           justify-content: center
+          &:hover
+            border-color: transparent
+            background: #d8e5f0
+            color: #fff
       &:last-child
         margin-right: 0
       &:first-child
@@ -360,11 +382,19 @@
           padding-bottom: 80px
           li
             font-weight: 500
+@media (max-width: 1365px)
+  .courses-3-level
+    .modules .module.selected
+      .index
+        padding: 30px
 
 @media (max-width: 1199px)
   .courses-3-level
     .modules .module.selected
       padding-bottom: 140px
+      .index
+        left: -20%
+        height: 35%
 
 @media (max-width: 1024px)
   .courses-3-level
@@ -389,12 +419,16 @@
           margin-bottom: 50px
     .modules
       margin-bottom: 80px
+      .module:not(:first-child).selected
+        margin-top: 100px
       .module.selected
         padding: 40px 20px 80px
         .text
           width: 80%
-        .index p
-          margin-bottom: 230px
+        .index
+          left: -30%
+          p
+            margin: 0
     .students-work
       margin-bottom: 100px
       .wrapper h2
@@ -429,19 +463,25 @@
           margin-bottom: 45px
     .modules
       .module
+        &:not(:first-child).selected
+          margin-top: 0
         .index
           width: 35%
           padding: 25px
+          box-sizing: border-box
           p
             font-size: 14px
         &.selected
+          padding: 0 0 80px
           .index
-            left: -40px
-            width: 15%
+            position: static
+            transform: none
+            width: 100%
+            margin-bottom: 30px
             p
               font-size: 36px
           .text
-            width: 85%
+            width: 100%
     .price
       flex-direction: column
       .block

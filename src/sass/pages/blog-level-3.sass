@@ -69,6 +69,8 @@
         background: transparent
         cursor: pointer
         outline: none
+        &:hover
+          filter: contrast(175%) brightness(3%)
         &.like
           transform: scale(-1, 1)
         &.active
@@ -269,10 +271,17 @@
       margin-bottom: 40px
     .content .img-block
       margin-bottom: 40px
-    .popular .slider .wrapper .blocks .elem
-      .image
-        img
-          max-width: 60vw
+    .popular .slider
+      .wrapper .blocks .elem
+        .image
+          img
+            max-width: 60vw
+      .arrows .arrow
+        right: 10px
+        width: 30px
+        height: 30px
+        &.prev
+          left: 10px
 
 @media (max-width: 568px)
   .blog-level-3
@@ -294,12 +303,8 @@
       .slider
         .wrapper .blocks
           padding: 0 30px 30px
-        .arrows .arrow
-          right: 10px
-          width: 30px
-          height: 30px
-          &.prev
-            left: 10px
+        .arrows
+          display: none
 
 @media (max-width: 480px)
   .blog-level-3

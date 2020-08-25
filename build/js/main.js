@@ -1,4 +1,4 @@
-/*        event to skroll header  */
+/*        event to scroll header  */
 
 if (document.querySelector('header')){
     window.addEventListener('scroll', function (){
@@ -13,7 +13,7 @@ if (document.querySelector('header')){
     })
 }
 
-/*        event to skroll header  */
+/*        event to scroll header  */
 
 
 /*     event to scroll images on art-travel page     */
@@ -123,6 +123,7 @@ if (document.querySelector('.blog .elem.small')){
 /*     event to scroll images on blog-level-3 page     */
 
 if (document.querySelector('.blog-level-3 .popular .slider')){
+    let slider = document.querySelector('.blog-level-3 .popular .slider');
     let startCordX = 0
     let drag = function (event){
         event.preventDefault();
@@ -141,9 +142,83 @@ if (document.querySelector('.blog-level-3 .popular .slider')){
         event.stopPropagation();
         this.removeEventListener('mousemove', drag)
     }
-    document.querySelector('.blog-level-3 .popular .wrapper').addEventListener('mousedown', startDrag)
-    document.querySelector('.blog-level-3 .popular .wrapper').addEventListener('mouseup', endDrag)
-    document.querySelector('.blog-level-3 .popular .wrapper').addEventListener('mouseleave', endDrag)
+    slider.querySelector('.wrapper').addEventListener('mousedown', startDrag)
+    slider.querySelector('.wrapper').addEventListener('mouseup', endDrag)
+    slider.querySelector('.wrapper').addEventListener('mouseleave', endDrag)
+    slider.querySelectorAll('.arrows .arrow').forEach(elem => {
+        elem.addEventListener('click', function (){
+            slider.querySelector('.wrapper').style.scrollBehavior = 'smooth'
+            let currentOffset = 0,
+                checkFlag = true,
+                sliderOffsetLeft = slider.querySelector('.wrapper').scrollLeft + 100,
+                nextOffset = 0
+            slider.querySelectorAll('.wrapper .elem').forEach( elem => {
+                if(sliderOffsetLeft >= elem.offsetLeft && sliderOffsetLeft <= (elem.offsetLeft + elem.offsetWidth + 40) && checkFlag){
+                    currentOffset = elem.offsetLeft
+                    checkFlag = false
+                    nextOffset = elem.offsetWidth
+                } else if (checkFlag) {
+                    currentOffset = elem.offsetLeft + elem.offsetWidth
+                }
+            })
+            if (elem.classList.contains('next')){
+                slider.querySelector('.wrapper').scrollLeft = currentOffset + nextOffset - 40
+            }
+            if (elem.classList.contains('prev')){
+                slider.querySelector('.wrapper').scrollLeft = currentOffset - nextOffset - 40
+            }
+            slider.querySelector('.wrapper').style.scrollBehavior = 'auto'
+        })
+    })
 }
 
 /*     event to scroll images on blog-level-3 page     */
+
+
+/*      event to style modules on courses-3-level*/
+
+if (document.querySelector('.courses-3-level .modules')){
+    document.querySelectorAll('.courses-3-level .modules .module').forEach( elem => {
+        elem.addEventListener('click', () => elem.classList.toggle('selected'))
+    })
+}
+
+/*      event to style modules on courses-3-level*/
+
+/*      btn to open popup       */
+
+if (document.querySelector('*[data-popup]')){
+    document.querySelectorAll('*[data-popup]').forEach( elem => {
+        elem.addEventListener('click',() => {
+            let popup = document.querySelector(`.${elem.dataset.popup}`),
+                checkCloseFlag = false
+            popup.classList.add('active')
+            if (popup.querySelector('.close')){
+                let display = window.getComputedStyle(popup.querySelector('.close')).getPropertyValue('display')
+                if (display !== 'none'){
+                    checkCloseFlag = true
+                }
+            }
+            if (checkCloseFlag){
+                popup.querySelector('.close').addEventListener('click', () => popup.classList.remove('active'))
+            } else {
+                let checkToClick = function (event){
+                    if (event.target.closest(`.${elem.dataset.popup}`) === null){
+                        popup.classList.remove('active')
+                        window.removeEventListener('mousedown', checkToClick)
+                    }
+                }
+                window.addEventListener('mousedown', checkToClick)
+            }
+        })
+    })
+}
+
+/*      btn to open popup       */
+
+if (document.querySelector('.menu-burger')){
+    document.querySelector('.menu-burger').addEventListener('click', (e) => {
+        document.body.classList.toggle('open')
+        e.preventDefault()
+    })
+}
