@@ -8,10 +8,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    header > .container .logo p {
+    header > .container .logo a {
       margin: 0;
       font-size: 18px;
-      font-weight: 600; }
+      font-weight: 600;
+      text-decoration: none;
+      color: #000; }
     header > .container .menu-burger {
       display: flex;
       align-items: center;

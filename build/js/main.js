@@ -207,3 +207,73 @@ document.querySelector('header .menu-burger').addEventListener('click', function
     e.preventDefault();
     document.body.classList.toggle('open')
 })
+
+/*      event to move Images    */
+
+if (document.querySelector('.courses .elem')){
+    document.querySelectorAll('.courses .elem').forEach( elem => {
+        let image = elem.querySelector('img:first-child'),
+            timer,
+            moveFunc = function (event){
+                let rect = event.target.getBoundingClientRect();
+                this.style.transform = `perspective(1200px) rotateY(${-((20 * (event.clientX - rect.left) / this.offsetWidth) - 10).toFixed(2)}deg) rotateX(${((20 * (event.clientY - rect.top) / this.offsetHeight) - 10).toFixed(2)}deg) scale3d(1.08, 1.08, 1.08)`
+                this.style.transition = 'none'
+            };
+        image.addEventListener('mouseenter', function(event){
+            this.style.transition = `all 500ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s`
+            this.style.transform = `scale3d(1.08, 1.08, 1.08)`
+            setTimeout( () => {
+                this.addEventListener('mousemove', moveFunc)
+            }, 500)
+        })
+        image.addEventListener('mouseleave', function(event){
+            this.style.transform = `scale(1) perspective(1200px) rotateY(0) rotateX(0) scale3d(1, 1, 1)`
+            this.style.transition = `all 4000ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s`
+            clearTimeout(timer)
+            timer = setTimeout( () => {
+                this.style.transform = ''
+                this.style.transition = ''
+            }, 4000)
+            this.removeEventListener('mousemove', moveFunc)
+        })
+    })
+}
+
+/*      event to move Images    */
+
+/*      event to show Images*/
+
+if (document.querySelector('.courses .elem')) {
+    AOS.init({
+        delay: 100,
+        duration: 1000,
+        once: true
+    });
+    let checkArr = [];
+    let sumOfAllElem = document.querySelectorAll('.courses .elem').length
+    let interval = setInterval(() => {
+        document.querySelectorAll('.courses .elem:not(.complete-animation)').forEach(elem => {
+            if (elem.querySelector('.wrapp').classList.contains('aos-animate')) {
+                elem.classList.add('complete-animation')
+                if (elem.classList.contains('complete-animation')) {
+                    checkArr.push(elem)
+                }
+                setTimeout(() => {
+                    elem.querySelector('.wrapp').style.transform = `skew(30deg) translateX(180%)`
+                    elem.querySelector('.wrapp').style.transition = `transform 1000ms`
+                    setTimeout(() => {
+                        elem.querySelector('.wrapp').style.display = `none`
+                        elem.querySelector('.image').style.overflow = 'visible'
+                        elem.querySelector('.shadow').style.transition = `opacity 1000ms`
+                        elem.querySelector('.shadow').style.opacity = `1`
+                    }, 1000)
+                }, 1400)
+                if (checkArr.length === sumOfAllElem) {
+                    clearInterval(interval)
+                }
+            }
+        }, 100)
+    })
+}
+
+/*      event to show Images*/
