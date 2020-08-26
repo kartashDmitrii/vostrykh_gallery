@@ -155,28 +155,6 @@ if (document.querySelector('.blog-level-3 .popular .slider')){
                 slider.querySelector('.wrapper').scrollLeft -= slider.querySelector('.wrapper').offsetWidth
             }
             slider.querySelector('.wrapper').style.scrollBehavior = 'auto'
-            /*slider.querySelector('.wrapper').style.scrollBehavior = 'smooth'
-            let currentOffset = 0,
-                checkFlag = true,
-                sliderOffsetLeft = slider.querySelector('.wrapper').scrollLeft + 100,
-                nextOffset = 0
-            slider.querySelectorAll('.wrapper .elem').forEach( elem => {
-                if(sliderOffsetLeft >= elem.offsetLeft && sliderOffsetLeft <= (elem.offsetLeft + elem.offsetWidth + 40) && checkFlag){
-                    currentOffset = elem.offsetLeft
-                    checkFlag = false
-                    nextOffset = elem.offsetWidth
-                } else if (checkFlag) {
-                    currentOffset = elem.offsetLeft + elem.offsetWidth
-                }
-            })
-            if (elem.classList.contains('next')){
-                slider.querySelector('.wrapper').scrollLeft = currentOffset + nextOffset - 40
-            }
-            if (elem.classList.contains('prev')){
-                slider.querySelector('.wrapper').scrollLeft = currentOffset - nextOffset - 40
-            }
-            slider.querySelector('.wrapper').style.scrollBehavior = 'auto'
-        })*/
         })
     })
 }
@@ -224,3 +202,8 @@ if (document.querySelector('*[data-popup]')){
 }
 
 /*      btn to open popup       */
+
+document.querySelector('header .menu-burger').addEventListener('click', function(e){
+    e.preventDefault();
+    document.body.classList.toggle('open')
+})
