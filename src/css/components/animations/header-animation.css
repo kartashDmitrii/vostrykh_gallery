@@ -2,7 +2,7 @@ header .menu {
   visibility: hidden;
   opacity: 0;
   transition: all 1s;
-  transition-delay: 1s; }
+  transition-delay: 0s; }
   .open header .menu {
     visibility: visible;
     opacity: 1;
@@ -11,15 +11,14 @@ header .menu {
 
 header .menu-burger .menu-icon-toggle {
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 18px;
+  height: 24px;
   margin-right: 10px;
   position: relative;
   z-index: 23; }
-  .home header .menu-burger .menu-icon-toggle {
-    position: absolute;
-    right: 20px;
-    top: 20px; }
+  .open header .menu-burger .menu-icon-toggle {
+    width: 30px;
+    height: 30px; }
   header .menu-burger .menu-icon-toggle span {
     display: block;
     width: 100%;
@@ -27,7 +26,7 @@ header .menu-burger .menu-icon-toggle {
     position: absolute;
     z-index: 19;
     top: 50%;
-    background-color: #828282;
+    background-color: #000000;
     transform: translate(0, -50%);
     transition: opacity 0.3s 0.3s; }
     .home:not(.open) header .menu-burger .menu-icon-toggle span {
@@ -39,7 +38,7 @@ header .menu-burger .menu-icon-toggle {
     height: 2px;
     position: absolute;
     z-index: 9999;
-    background-color: #828282;
+    background-color: #000000;
     transition: transform 0.3s, top 0.3s 0.3s, bottom 0.3s 0.3s; }
   header .menu-burger .menu-icon-toggle::before {
     top: 6px; }
@@ -58,6 +57,9 @@ header .menu-burger .menu-icon-toggle {
     transform: rotate(-45deg); }
   .open header .menu-burger .menu-icon-toggle::before, .open header .menu-burger .menu-icon-toggle::after {
     transition: top 0.3s, bottom 0.3s, transform 0.3s 0.3s; }
+
+.open header .menu-burger p {
+  display: none; }
 
 header .menu-burger .menu-background {
   visibility: hidden;

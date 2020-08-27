@@ -97,7 +97,8 @@
         font-weight: 600;
         padding-right: 34px;
         position: relative;
-        margin: 0 0 32px; }
+        margin: 0 0 32px;
+        text-transform: uppercase; }
         .about-us .our-team .container > h2:after {
           content: '';
           width: 20px;
@@ -149,6 +150,8 @@
               position: relative; }
               .about-us .our-team .container .team .employee .text a:hover {
                 text-decoration: none; }
+                .about-us .our-team .container .team .employee .text a:hover:after {
+                  right: -8px; }
               .about-us .our-team .container .team .employee .text a:after {
                 content: '';
                 width: 8px;
@@ -160,7 +163,8 @@
                 margin: auto;
                 border: solid #4c4c4c;
                 border-width: 1px 1px 0 0;
-                transform: rotate(45deg); }
+                transform: rotate(45deg);
+                transition: all .3s; }
           @media (min-width: 768px) {
             .about-us .our-team .container .team .employee:nth-child(odd) {
               align-self: flex-start;

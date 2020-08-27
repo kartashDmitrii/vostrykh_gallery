@@ -1,4 +1,6 @@
 .about-us-artwork
+  .top-block
+    margin-bottom: 320px
   .social
     margin-bottom: 65px
   .gallery
@@ -14,8 +16,6 @@
         transition: all .3s
         text-decoration: none
         color: #000
-        &:hover
-          transform: scale(1.1)
       &>div
         &:first-child
           .paint
@@ -59,6 +59,11 @@
   .subscribe
     margin-top: 160px
     clear: both
+
+@media (max-width: 1365px)
+  .about-us-artwork
+    .top-block
+      margin-bottom: 150px
 
 @media (max-width: 767px)
   .about-us-artwork

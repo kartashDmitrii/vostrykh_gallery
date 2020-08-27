@@ -143,7 +143,8 @@
 
 @font-face {
   font-family: 'Futura';
-  src: url("../fonts/Futura-Bold.ttf") format("truetype");
+  src: url("../fonts/Futura/Futura-Bold.eot");
+  src: url("../fonts/Futura/Futura-Bold.woff") format("woff"), url("../fonts/Futura/Futura-Bold.ttf") format("truetype"), url("../fonts/Futura/Futura-Bold.svg") format("svg");
   font-weight: bold;
   font-style: normal; }
 
@@ -313,14 +314,16 @@ header {
     header > .container .menu-burger {
       display: flex;
       align-items: center;
-      cursor: pointer; }
+      cursor: pointer;
+      color: #000000; }
       header > .container .menu-burger img {
         width: 18px;
         height: 16px;
         margin-right: 13px; }
       header > .container .menu-burger p {
         font-size: 18px;
-        margin: 0; }
+        margin: 0;
+        text-transform: uppercase; }
   header.scroll {
     position: fixed;
     top: 0;
@@ -619,7 +622,7 @@ header .menu {
   visibility: hidden;
   opacity: 0;
   transition: all 1s;
-  transition-delay: 1s; }
+  transition-delay: 0s; }
   .open header .menu {
     visibility: visible;
     opacity: 1;
@@ -628,15 +631,14 @@ header .menu {
 
 header .menu-burger .menu-icon-toggle {
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 18px;
+  height: 24px;
   margin-right: 10px;
   position: relative;
   z-index: 23; }
-  .home header .menu-burger .menu-icon-toggle {
-    position: absolute;
-    right: 20px;
-    top: 20px; }
+  .open header .menu-burger .menu-icon-toggle {
+    width: 30px;
+    height: 30px; }
   header .menu-burger .menu-icon-toggle span {
     display: block;
     width: 100%;
@@ -644,7 +646,7 @@ header .menu-burger .menu-icon-toggle {
     position: absolute;
     z-index: 19;
     top: 50%;
-    background-color: #828282;
+    background-color: #000000;
     transform: translate(0, -50%);
     transition: opacity 0.3s 0.3s; }
     .home:not(.open) header .menu-burger .menu-icon-toggle span {
@@ -656,7 +658,7 @@ header .menu-burger .menu-icon-toggle {
     height: 2px;
     position: absolute;
     z-index: 9999;
-    background-color: #828282;
+    background-color: #000000;
     transition: transform 0.3s, top 0.3s 0.3s, bottom 0.3s 0.3s; }
   header .menu-burger .menu-icon-toggle::before {
     top: 6px; }
@@ -675,6 +677,9 @@ header .menu-burger .menu-icon-toggle {
     transform: rotate(-45deg); }
   .open header .menu-burger .menu-icon-toggle::before, .open header .menu-burger .menu-icon-toggle::after {
     transition: top 0.3s, bottom 0.3s, transform 0.3s 0.3s; }
+
+.open header .menu-burger p {
+  display: none; }
 
 header .menu-burger .menu-background {
   visibility: hidden;
@@ -954,7 +959,7 @@ header .menu-burger .menu-background {
     align-items: center;
     justify-content: center;
     padding: 261px 0 77px;
-    margin-bottom: 20px;
+    margin-bottom: 150px;
     position: relative; }
     .index .creative-space:hover .hidden {
       opacity: 0; }
@@ -1052,7 +1057,7 @@ header .menu-burger .menu-background {
         display: flex;
         flex-direction: column; }
       .index .about-us .text b, .index .why-us .container .text b {
-        font-weight: bold;
+        font-weight: 700;
         font-family: Futura;
         font-size: 24px;
         margin-bottom: 24px;
@@ -1091,7 +1096,8 @@ header .menu-burger .menu-background {
       text-decoration: none;
       transition: all .3s; }
       .index .parallax a:hover {
-        transform: scale(1.2); }
+        color: #fff;
+        background: rgba(104, 116, 84, 0.8); }
   .index .why-us {
     padding: 140px 0 77px;
     position: relative;
@@ -1294,7 +1300,8 @@ header .menu-burger .menu-background {
         font-weight: 600;
         padding-right: 34px;
         position: relative;
-        margin: 0 0 32px; }
+        margin: 0 0 32px;
+        text-transform: uppercase; }
         .about-us .our-team .container > h2:after {
           content: '';
           width: 20px;
@@ -1346,6 +1353,8 @@ header .menu-burger .menu-background {
               position: relative; }
               .about-us .our-team .container .team .employee .text a:hover {
                 text-decoration: none; }
+                .about-us .our-team .container .team .employee .text a:hover:after {
+                  right: -8px; }
               .about-us .our-team .container .team .employee .text a:after {
                 content: '';
                 width: 8px;
@@ -1357,7 +1366,8 @@ header .menu-burger .menu-background {
                 margin: auto;
                 border: solid #4c4c4c;
                 border-width: 1px 1px 0 0;
-                transform: rotate(45deg); }
+                transform: rotate(45deg);
+                transition: all .3s; }
           @media (min-width: 768px) {
             .about-us .our-team .container .team .employee:nth-child(odd) {
               align-self: flex-start;
@@ -1472,6 +1482,9 @@ header .menu-burger .menu-background {
   .about-us .parallax {
     height: 250px; } }
 
+.about-us-artwork .top-block {
+  margin-bottom: 320px; }
+
 .about-us-artwork .social {
   margin-bottom: 65px; }
 
@@ -1489,8 +1502,6 @@ header .menu-burger .menu-background {
   transition: all .3s;
   text-decoration: none;
   color: #000; }
-  .about-us-artwork .gallery #grid .paint:hover {
-    transform: scale(1.1); }
 
 .about-us-artwork .gallery #grid > div:first-child .paint {
   margin-right: 20px;
@@ -1538,6 +1549,10 @@ header .menu-burger .menu-background {
 .about-us-artwork .subscribe {
   margin-top: 160px;
   clear: both; }
+
+@media (max-width: 1365px) {
+  .about-us-artwork .top-block {
+    margin-bottom: 150px; } }
 
 @media (max-width: 767px) {
   .about-us-artwork .gallery #grid::before {
@@ -1588,7 +1603,8 @@ header .menu-burger .menu-background {
     text-decoration: none;
     transition: all .3s; }
     .courses-page .parallax a:hover {
-      transform: scale(1.1); }
+      color: #fff;
+      background: rgba(104, 116, 84, 0.8); }
 
 .art-travel .banner {
   width: 1000px;
@@ -1738,7 +1754,8 @@ header .menu-burger .menu-background {
       position: relative;
       margin: 0 0 135px;
       padding-right: 35px;
-      align-self: flex-end; }
+      align-self: flex-end;
+      text-transform: uppercase; }
       .art-travel .team .container h2:after {
         content: '';
         position: absolute;
@@ -1809,14 +1826,15 @@ header .menu-burger .menu-background {
     margin: 0 0 46px;
     text-align: center;
     position: relative;
-    padding-right: 40px;
-    text-transform: uppercase; }
+    padding-right: 32px;
+    text-transform: uppercase;
+    transform: matrix(1.35, 0, 0, 1, 0, 0); }
     .art-travel .reservation h2:after {
       content: '';
       position: absolute;
       right: 0;
       bottom: -10px;
-      width: 20px;
+      width: 16px;
       height: 20px;
       background: #000; }
   .art-travel .reservation p {
@@ -1910,7 +1928,9 @@ header .menu-burger .menu-background {
   .art-travel .parallax.second button {
     width: 95%;
     padding: 25px 20px;
-    font-size: 14px; } }
+    font-size: 14px; }
+  .art-travel .reservation h2 {
+    transform: none; } }
 
 @media (max-width: 480px) {
   .art-travel .text-field .wrapper {
@@ -2028,8 +2048,6 @@ header .menu-burger .menu-background {
         display: flex;
         flex-direction: column;
         cursor: pointer; }
-        .art-travel2 .info .container .block .news:hover {
-          background: rgba(255, 255, 255, 0.7); }
         .art-travel2 .info .container .block .news .title {
           font-weight: 700;
           font-size: 24px;
@@ -2111,7 +2129,8 @@ header .menu-burger .menu-background {
       margin-bottom: 100px;
       transition: all .3s; }
       .art-travel2 .art-team > a:hover {
-        transform: scale(1.1); }
+        background-color: #8e8e8e;
+        color: #ffffff; }
     .art-travel2 .art-team .images {
       display: flex;
       overflow-x: scroll;
@@ -2188,7 +2207,8 @@ header .menu-burger .menu-background {
       position: relative;
       padding-right: 40px;
       text-transform: uppercase;
-      color: #ffffff; }
+      color: #ffffff;
+      transform: matrix(1.35, 0, 0, 1, 0, 0); }
       .art-travel2 .reservation h2:after {
         content: '';
         position: absolute;
@@ -2267,7 +2287,9 @@ header .menu-burger .menu-background {
     padding-bottom: 67%;
     overflow: hidden; }
     .art-travel2 .art-team .images .image img {
-      height: auto; } }
+      height: auto; }
+  .art-travel2 .reservation h2 {
+    transform: none; } }
 
 @media (max-width: 480px) {
   .art-travel2 .banner .block h2 {
@@ -2335,7 +2357,7 @@ header .menu-burger .menu-background {
   .blog .popular .grid {
     display: grid;
     grid-column-gap: 1%;
-    grid-row-gap: 30px;
+    grid-row-gap: 35px;
     grid-template-columns: repeat(auto-fit, minmax(9%, 1fr));
     grid-auto-rows: 150px;
     grid-auto-flow: row;
@@ -2645,7 +2667,7 @@ header .menu-burger .menu-background {
       font-size: 14px;
       line-height: 18px;
       text-transform: uppercase;
-      font-weight: 300;
+      font-weight: 600;
       margin: 0 0 50px; }
   .blog-level-3 .popular .slider {
     position: relative;

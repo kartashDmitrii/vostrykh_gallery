@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     padding: 261px 0 77px;
-    margin-bottom: 20px;
+    margin-bottom: 150px;
     position: relative; }
     .index .creative-space:hover .hidden {
       opacity: 0; }
@@ -104,7 +104,7 @@
         display: flex;
         flex-direction: column; }
       .index .about-us .text b, .index .why-us .container .text b {
-        font-weight: bold;
+        font-weight: 700;
         font-family: Futura;
         font-size: 24px;
         margin-bottom: 24px;
@@ -143,7 +143,8 @@
       text-decoration: none;
       transition: all .3s; }
       .index .parallax a:hover {
-        transform: scale(1.2); }
+        color: #fff;
+        background: rgba(104, 116, 84, 0.8); }
   .index .why-us {
     padding: 140px 0 77px;
     position: relative;

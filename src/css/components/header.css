@@ -17,14 +17,16 @@ header {
     header > .container .menu-burger {
       display: flex;
       align-items: center;
-      cursor: pointer; }
+      cursor: pointer;
+      color: #000000; }
       header > .container .menu-burger img {
         width: 18px;
         height: 16px;
         margin-right: 13px; }
       header > .container .menu-burger p {
         font-size: 18px;
-        margin: 0; }
+        margin: 0;
+        text-transform: uppercase; }
   header.scroll {
     position: fixed;
     top: 0;

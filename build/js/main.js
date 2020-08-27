@@ -166,7 +166,26 @@ if (document.querySelector('.blog-level-3 .popular .slider')){
 
 if (document.querySelector('.courses-3-level .modules')){
     document.querySelectorAll('.courses-3-level .modules .module').forEach( elem => {
-        elem.addEventListener('click', () => elem.classList.toggle('selected'))
+        elem.addEventListener('click', () => {
+            document.querySelectorAll('.courses-3-level .modules .module').forEach(element => {
+                element.classList.remove('selected')
+            })
+            console.log(1)
+            elem.classList.add('selected')
+        })
+        elem.querySelector('.index').addEventListener('click', (e) => {
+            e.stopPropagation()
+            let flag = false;
+            if (!elem.classList.contains('selected')) {
+                flag = true
+            }
+            document.querySelectorAll('.courses-3-level .modules .module').forEach(element => {
+                element.classList.remove('selected')
+            })
+            if (flag){
+                elem.classList.add('selected')
+            }
+        })
     })
 }
 
@@ -277,3 +296,15 @@ if (document.querySelector('.courses .elem')) {
 }
 
 /*      event to show Images*/
+
+/*      event to fade in gallery*/
+
+if (document.querySelector('.about-us-artwork .gallery')){
+    AOS.init({
+        delay: 100,
+        duration: 1000,
+        once: true
+    });
+}
+
+/*      event to fade in gallery*/

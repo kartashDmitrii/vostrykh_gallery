@@ -146,7 +146,8 @@
       position: relative;
       margin: 0 0 135px;
       padding-right: 35px;
-      align-self: flex-end; }
+      align-self: flex-end;
+      text-transform: uppercase; }
       .art-travel .team .container h2:after {
         content: '';
         position: absolute;
@@ -217,14 +218,15 @@
     margin: 0 0 46px;
     text-align: center;
     position: relative;
-    padding-right: 40px;
-    text-transform: uppercase; }
+    padding-right: 32px;
+    text-transform: uppercase;
+    transform: matrix(1.35, 0, 0, 1, 0, 0); }
     .art-travel .reservation h2:after {
       content: '';
       position: absolute;
       right: 0;
       bottom: -10px;
-      width: 20px;
+      width: 16px;
       height: 20px;
       background: #000; }
   .art-travel .reservation p {
@@ -318,7 +320,9 @@
   .art-travel .parallax.second button {
     width: 95%;
     padding: 25px 20px;
-    font-size: 14px; } }
+    font-size: 14px; }
+  .art-travel .reservation h2 {
+    transform: none; } }
 
 @media (max-width: 480px) {
   .art-travel .text-field .wrapper {

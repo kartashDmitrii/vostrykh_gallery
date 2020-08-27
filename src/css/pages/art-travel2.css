@@ -92,8 +92,6 @@
         display: flex;
         flex-direction: column;
         cursor: pointer; }
-        .art-travel2 .info .container .block .news:hover {
-          background: rgba(255, 255, 255, 0.7); }
         .art-travel2 .info .container .block .news .title {
           font-weight: 700;
           font-size: 24px;
@@ -175,7 +173,8 @@
       margin-bottom: 100px;
       transition: all .3s; }
       .art-travel2 .art-team > a:hover {
-        transform: scale(1.1); }
+        background-color: #8e8e8e;
+        color: #ffffff; }
     .art-travel2 .art-team .images {
       display: flex;
       overflow-x: scroll;
@@ -252,7 +251,8 @@
       position: relative;
       padding-right: 40px;
       text-transform: uppercase;
-      color: #ffffff; }
+      color: #ffffff;
+      transform: matrix(1.35, 0, 0, 1, 0, 0); }
       .art-travel2 .reservation h2:after {
         content: '';
         position: absolute;
@@ -331,7 +331,9 @@
     padding-bottom: 67%;
     overflow: hidden; }
     .art-travel2 .art-team .images .image img {
-      height: auto; } }
+      height: auto; }
+  .art-travel2 .reservation h2 {
+    transform: none; } }
 
 @media (max-width: 480px) {
   .art-travel2 .banner .block h2 {

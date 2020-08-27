@@ -98,6 +98,7 @@
         padding-right: 34px
         position: relative
         margin: 0 0 32px
+        text-transform: uppercase
         &:after
           content: ''
           width: 20px
@@ -149,6 +150,8 @@
               position: relative
               &:hover
                 text-decoration: none
+                &:after
+                  right: -8px
               &:after
                 content: ''
                 width: 8px
@@ -161,6 +164,7 @@
                 border: solid #4c4c4c
                 border-width: 1px 1px 0 0
                 transform: rotate(45deg)
+                transition: all .3s
           @media (min-width: 768px)
             &:nth-child(odd)
               align-self: flex-start

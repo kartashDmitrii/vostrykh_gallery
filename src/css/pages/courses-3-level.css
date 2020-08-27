@@ -15,9 +15,9 @@
       margin-right: 57px;
       font-weight: 500; }
       .courses-3-level .banner .buttons .btn:hover {
-        border-color: transparent;
-        color: #fff;
-        transform: scale(1.1); }
+        border-color: #d0ab8a;
+        color: #d0ab8a;
+        background: #fff; }
       .courses-3-level .banner .buttons .btn:last-child {
         margin-right: 0; }
   .courses-3-level .banner p {
@@ -147,7 +147,8 @@
     text-decoration: none;
     transition: all .3s; }
     .courses-3-level .parallax a:hover {
-      transform: scale(1.1); }
+      color: #fff;
+      background: rgba(104, 116, 84, 0.8); }
 
 .courses-3-level .modules {
   display: flex;
@@ -159,7 +160,8 @@
     position: relative;
     box-sizing: border-box;
     box-shadow: 7px 7px 12px 0 rgba(216, 229, 240, 0.75);
-    transition: all .3s; }
+    transition: all .7s;
+    cursor: pointer; }
     .courses-3-level .modules .module:last-child {
       margin-bottom: 0; }
     .courses-3-level .modules .module .index {
@@ -169,7 +171,7 @@
       justify-content: flex-end;
       padding: 45px;
       background: #e3ecf4;
-      transition: all .3s;
+      transition: all .7s;
       max-height: 225px; }
       .courses-3-level .modules .module .index p {
         font-weight: 600;
@@ -182,9 +184,8 @@
       align-items: center;
       position: relative;
       width: 100%;
-      cursor: pointer;
       box-sizing: border-box;
-      transition: all .3s; }
+      transition: all .7s; }
       .courses-3-level .modules .module .text .name {
         width: 100%;
         position: relative; }

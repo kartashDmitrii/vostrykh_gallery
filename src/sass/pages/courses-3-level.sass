@@ -16,9 +16,9 @@
         margin-right: 57px
         font-weight: 500
         &:hover
-          border-color: transparent
-          color: #fff
-          transform: scale(1.1)
+          border-color: #d0ab8a
+          color: #d0ab8a
+          background: #fff
         &:last-child
           margin-right: 0
     p
@@ -145,7 +145,8 @@
       text-decoration: none
       transition: all .3s
       &:hover
-        transform: scale(1.1)
+        color: #fff
+        background: rgba(104, 116, 84, .8)
   .modules
     display: flex
     flex-direction: column
@@ -156,7 +157,8 @@
       position: relative
       box-sizing: border-box
       box-shadow: 7px 7px 12px 0 rgba(216,229,240,0.75)
-      transition: all .3s
+      transition: all .7s
+      cursor: pointer
       &:last-child
         margin-bottom: 0
       .index
@@ -166,7 +168,7 @@
         justify-content: flex-end
         padding: 45px
         background: #e3ecf4
-        transition: all .3s
+        transition: all .7s
         max-height: 225px
         p
           font-weight: 600
@@ -179,9 +181,8 @@
         align-items: center
         position: relative
         width: 100%
-        cursor: pointer
         box-sizing: border-box
-        transition: all .3s
+        transition: all .7s
         .name
           width: 100%
           position: relative

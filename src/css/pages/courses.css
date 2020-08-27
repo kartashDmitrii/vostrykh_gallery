@@ -17,4 +17,5 @@
     text-decoration: none;
     transition: all .3s; }
     .courses-page .parallax a:hover {
-      transform: scale(1.1); }
+      color: #fff;
+      background: rgba(104, 116, 84, 0.8); }
