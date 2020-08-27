@@ -19,3 +19,7 @@
     .courses-page .parallax a:hover {
       color: #fff;
       background: rgba(104, 116, 84, 0.8); }
+
+@media (max-width: 480px) {
+  .courses-page .parallax {
+    height: 150px; } }

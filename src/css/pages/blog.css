@@ -50,10 +50,7 @@
       box-shadow: 0 16px 26.73px 0.27px rgba(92, 110, 161, 0.17);
       margin: 0 5%;
       text-decoration: none;
-      color: #000;
-      transition: all .2s; }
-      .blog .popular .grid .elem:hover {
-        transform: scale(1.05); }
+      color: #000; }
       .blog .popular .grid .elem.small {
         grid-row: span 4;
         grid-column: span 3;
@@ -102,7 +99,6 @@
 
 .blog .parallax-with-btn {
   background-image: url("../img/blog_parallax_BG.jpg");
-  height: 400px;
   margin-bottom: 95px; }
 
 @media (max-width: 1365px) {

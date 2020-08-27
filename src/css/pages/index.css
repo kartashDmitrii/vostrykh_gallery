@@ -192,7 +192,8 @@
   .index .creative-space {
     max-width: none;
     background-size: auto 125%;
-    padding-top: 133px; }
+    padding-top: 133px;
+    margin-bottom: 40px; }
     .index .creative-space h2 {
       font-size: 42px;
       letter-spacing: 10px; }
@@ -231,10 +232,12 @@
     margin-bottom: 60px; } }
 
 @media (max-width: 480px) {
-  .index .creative-space p {
-    text-align: center;
-    padding-left: 0; }
-    .index .creative-space p:before {
+  .index .creative-space {
+    margin-bottom: 15px; }
+    .index .creative-space p {
+      text-align: center;
+      padding-left: 0; }
+    .index .creative-space:before {
       left: 0;
       right: 0;
       bottom: auto;
@@ -246,4 +249,8 @@
     font-size: 32px;
     margin-bottom: 25px; }
   .index .form .btn {
-    width: 100%; } }
+    width: 100%; }
+  .index .parallax.first {
+    height: 150px; }
+  .index .parallax.second {
+    height: 165px; } }

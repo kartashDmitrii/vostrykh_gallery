@@ -170,7 +170,6 @@ if (document.querySelector('.courses-3-level .modules')){
             document.querySelectorAll('.courses-3-level .modules .module').forEach(element => {
                 element.classList.remove('selected')
             })
-            console.log(1)
             elem.classList.add('selected')
         })
         elem.querySelector('.index').addEventListener('click', (e) => {
@@ -229,23 +228,22 @@ document.querySelector('header .menu-burger').addEventListener('click', function
 
 /*      event to move Images    */
 
-if (document.querySelector('.courses .elem')){
-    document.querySelectorAll('.courses .elem').forEach( elem => {
-        let image = elem.querySelector('img:first-child'),
-            timer,
-            moveFunc = function (event){
-                let rect = event.target.getBoundingClientRect();
-                this.style.transform = `perspective(1200px) rotateY(${-((20 * (event.clientX - rect.left) / this.offsetWidth) - 10).toFixed(2)}deg) rotateX(${((20 * (event.clientY - rect.top) / this.offsetHeight) - 10).toFixed(2)}deg) scale3d(1.08, 1.08, 1.08)`
-                this.style.transition = 'none'
-            };
-        image.addEventListener('mouseenter', function(event){
+if (document.querySelector('.dragged-block')){
+    document.querySelectorAll('.dragged-block .drag').forEach( elem => {
+            let timer,
+                moveFunc = function (event){
+                    let rect = elem.getBoundingClientRect();
+                    this.style.transform = `perspective(1200px) rotateY(${-((20 * (event.clientX - rect.left) / this.offsetWidth) - 10).toFixed(2)}deg) rotateX(${((20 * (event.clientY - rect.top) / this.offsetHeight) - 10).toFixed(2)}deg) scale3d(1.08, 1.08, 1.08)`
+                    this.style.transition = 'none'
+                };
+        elem.addEventListener('mouseenter', function(event){
             this.style.transition = `all 500ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s`
             this.style.transform = `scale3d(1.08, 1.08, 1.08)`
             setTimeout( () => {
                 this.addEventListener('mousemove', moveFunc)
             }, 500)
         })
-        image.addEventListener('mouseleave', function(event){
+        elem.addEventListener('mouseleave', function(event){
             this.style.transform = `scale(1) perspective(1200px) rotateY(0) rotateX(0) scale3d(1, 1, 1)`
             this.style.transition = `all 4000ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s`
             clearTimeout(timer)
@@ -260,18 +258,13 @@ if (document.querySelector('.courses .elem')){
 
 /*      event to move Images    */
 
-/*      event to show Images*/
+/*      event to show and Images*/
 
-if (document.querySelector('.courses .elem')) {
-    AOS.init({
-        delay: 100,
-        duration: 1000,
-        once: true
-    });
+if (document.querySelector('.custom-animation') && screen.width >= 576) {
     let checkArr = [];
-    let sumOfAllElem = document.querySelectorAll('.courses .elem').length
+    let sumOfAllElem = document.querySelectorAll('.custom-animation').length
     let interval = setInterval(() => {
-        document.querySelectorAll('.courses .elem:not(.complete-animation)').forEach(elem => {
+        document.querySelectorAll('.custom-animation:not(.complete-animation)').forEach(elem => {
             if (elem.querySelector('.wrapp').classList.contains('aos-animate')) {
                 elem.classList.add('complete-animation')
                 if (elem.classList.contains('complete-animation')) {
@@ -295,11 +288,40 @@ if (document.querySelector('.courses .elem')) {
     })
 }
 
-/*      event to show Images*/
+/*      event to showImages*/
+
+/*      event to scroll Images*/
+if (document.querySelector('.scroll-block') && screen.width >= 576){
+    let heightsOfAllBlock = [];
+    document.querySelectorAll('.scroll-block').forEach( elem => {
+        let objOfHeight = {}
+        objOfHeight.min = elem.offsetTop
+        objOfHeight.max = elem.offsetTop + elem.offsetHeight
+        objOfHeight.elem = elem
+        heightsOfAllBlock.push(objOfHeight)
+    })
+    window.addEventListener('scroll', (event)=> {
+        for(let elem of heightsOfAllBlock){
+            let currentHeight = window.scrollY + (screen.height / 2)
+            if (currentHeight >= elem.min && currentHeight <= elem.max){
+                elem.elem.querySelectorAll('.scrolled').forEach( (block,index) => {
+                    block.style.transition = 'transform .8s'
+                    if (index % 3 - 1 === 0) {
+                        block.style.transform = `translate3d(0px, ${(30 * (window.scrollY - elem.min) / elem.max) - 15}px, 0px)`
+                    } else {
+                        block.style.transform = `translate3d(0px, ${-(30 * (window.scrollY - elem.min) / elem.max) - 15}px, 0px)`
+                    }
+                })
+            }
+        }
+    })
+}
+
+/*      event to scroll Images*/
 
 /*      event to fade in gallery*/
 
-if (document.querySelector('.about-us-artwork .gallery')){
+if (document.querySelector('*[data-aos]')){
     AOS.init({
         delay: 100,
         duration: 1000,

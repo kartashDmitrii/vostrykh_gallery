@@ -40,3 +40,7 @@
     width: 95%;
     padding: 25px 20px;
     font-size: 14px; } }
+
+@media (max-width: 480px) {
+  .parallax-with-btn {
+    height: 200px; } }

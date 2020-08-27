@@ -204,7 +204,6 @@
     background: url("../img/art-travel_parallax_BG.jpg") center center/cover no-repeat fixed; }
 
 .art-travel .parallax-with-btn {
-  height: 400px;
   background: url("../img/art-travel_parallax2_BG.jpg") center center/cover no-repeat fixed; }
 
 .art-travel .reservation {
@@ -253,7 +252,7 @@
       .art-travel .photo .container .grid .size-1of3 {
         width: 33.333%; }
       .art-travel .photo .container .grid .image {
-        margin: 0 10px 25px; }
+        margin: 0 10px 30px; }
       .art-travel .photo .container .grid > div:first-child .image {
         margin-right: 20px;
         margin-left: 0; }
@@ -344,4 +343,6 @@
       .art-travel .photo .container .grid::before .size-1of1 {
         width: 100%; }
       .art-travel .photo .container .grid::before > div:first-child .image {
-        margin-right: 0; } }
+        margin-right: 0; }
+  .art-travel .parallax.first {
+    height: 280px; } }

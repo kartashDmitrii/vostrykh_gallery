@@ -167,6 +167,7 @@
       font-weight: 600;
       margin: 0 0 50px; }
   .blog-level-3 .popular .slider {
+    cursor: grab;
     position: relative;
     z-index: 3; }
     .blog-level-3 .popular .slider .wrapper {
@@ -196,7 +197,9 @@
           box-sizing: border-box;
           box-shadow: 0 16px 26.73px 0.27px rgba(92, 110, 161, 0.17);
           margin: 0 20px;
-          width: min-content; }
+          width: min-content;
+          text-decoration: none;
+          color: #000; }
           .blog-level-3 .popular .slider .wrapper .blocks .elem .image {
             width: auto; }
             .blog-level-3 .popular .slider .wrapper .blocks .elem .image img {

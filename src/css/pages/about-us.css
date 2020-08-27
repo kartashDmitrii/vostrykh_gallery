@@ -117,7 +117,9 @@
           .about-us .our-team .container .team .employee .image {
             min-width: 370px;
             width: 370px;
-            margin-right: 50px; }
+            margin-right: 50px;
+            position: relative;
+            overflow: hidden; }
           .about-us .our-team .container .team .employee .text {
             display: flex;
             flex-direction: column;
@@ -247,7 +249,7 @@
     right: 75%; }
   .about-us .our-team .container .team .employee {
     width: 100%;
-    margin: 0 0 15px; }
+    margin: 0 0 65px; }
     .about-us .our-team .container .team .employee .image {
       margin-left: 15px;
       margin-top: 0; } }

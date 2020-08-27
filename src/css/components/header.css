@@ -42,3 +42,7 @@ header {
   @media (max-width: 480px) and (max-width: 480px) {
     header .container .logo p {
       font-size: 14px; } }
+
+@media (max-width: 480px) {
+    header .container .menu-burger p {
+      display: none; } }
